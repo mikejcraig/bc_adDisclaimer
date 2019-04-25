@@ -2,12 +2,12 @@ videojs.registerPlugin('adDisclaimer', function() {
   var player = this;
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
-    alert('start');
+   // alert('start');
       function adDisclaimerElement() {
         var disclaimerEl = document.createElement('div');
         disclaimerEl.setAttribute("id", "ad-disclaimer");
         disclaimerEl.innerHTML = "Advertisement";
-            alert(disclaimerEl);
+    //        alert(disclaimerEl);
 
         return disclaimerEl;
 }
@@ -18,7 +18,7 @@ videojs.registerPlugin('adDisclaimer', function() {
           'justify-content: center; margin-top: 10px; font-size:2em;'
         );    
 
-        alert(spacerEl);
+   //     alert(spacerEl);
 
         return spacerEl;
       }
@@ -31,7 +31,7 @@ videojs.registerPlugin('adDisclaimer', function() {
       showAdDisclaimer();
     });
     player.on('ima3-complete', function() {
-              alert('complete');
+   //           alert('complete');
       function hideAdDisclaimer() {
         var disclaimerEl = document.getElementById('ad-disclaimer');
         disclaimerEl.remove();

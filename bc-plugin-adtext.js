@@ -6,7 +6,6 @@ videojs.registerPlugin('adDisclaimer', function() {
         var disclaimerEl = document.createElement('div');
         disclaimerEl.setAttribute("id", "ad-disclaimer");
         disclaimerEl.innerHTML = "Advertisement";
-            alert(disclaimerEl);
 
         return disclaimerEl;
 }

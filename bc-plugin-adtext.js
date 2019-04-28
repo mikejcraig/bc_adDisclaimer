@@ -32,6 +32,11 @@ videojs.registerPlugin('adDisclaimer', function() {
         disclaimerEl.remove();
       }
       hideAdDisclaimer();
+             player.pause(); // don't play the video ever
+      setTimeout(function(){ 
+                player.dispose();
+      }, 200);
+
     });
 }); 
 });

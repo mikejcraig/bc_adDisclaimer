@@ -30,7 +30,7 @@ videojs.registerPlugin('adDisclaimer', function() {
         var disclaimerEl = document.getElementById('ad-disclaimer');
         disclaimerEl.remove();
       }
-      hideAdDisclaimer();
+   //   hideAdDisclaimer();
              this.pause(); // don't play the video ever
       setTimeout(function(){ 
                 this.dispose();

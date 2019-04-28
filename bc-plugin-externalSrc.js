@@ -13,7 +13,7 @@ videojs.registerPlugin('externalSrc', function() {
 
 });
   player.on('ended', function() {
-    alert('ended');
+ //   alert('ended');
 
 //  this.dispose();
 });  

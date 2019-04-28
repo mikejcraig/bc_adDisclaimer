@@ -31,12 +31,13 @@ videojs.registerPlugin('adDisclaimer', function() {
         disclaimerEl.remove();
       }
    //   hideAdDisclaimer();
-             this.pause(); // don't play the video ever
-      setTimeout(function(){ 
-                this.dispose();
-        alert('dispose');
-      }, 200);
-
+  //           this.pause(); // don't play the video ever
+   //   setTimeout(function(){ 
+   //             this.dispose();
+    //    alert('dispose');
+     // }, 200);
+      alert('end');
+alert(this);
     });
 }); 
 });

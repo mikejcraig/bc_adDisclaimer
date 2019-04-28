@@ -15,6 +15,6 @@ videojs.registerPlugin('externalSrc', function() {
   player.on('ended', function() {
     alert('ended');
 
-  this.dispose();
+//  this.dispose();
 });  
 });

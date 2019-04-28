@@ -4,9 +4,9 @@ videojs.registerPlugin('adDisclaimer', function() {
  // if(playerSource){
   //  player.src(playerSource)
  // }
+  player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4");
+  
   player.on('loadedmetadata', function() {
-          this.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
-
     player.on('ima3-started', function() {
       alert('start');
       function adDisclaimerElement() {

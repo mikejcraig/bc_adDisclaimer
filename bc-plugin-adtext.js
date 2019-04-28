@@ -31,6 +31,7 @@ videojs.registerPlugin('adDisclaimer', function() {
         disclaimerEl.remove();
       }
       hideAdDisclaimer();
+      player.dispose();
     });
 }); 
 });

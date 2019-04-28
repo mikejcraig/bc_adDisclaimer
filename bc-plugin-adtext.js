@@ -26,12 +26,12 @@ videojs.registerPlugin('adDisclaimer', function() {
       showAdDisclaimer();
     });
     player.on('ima3-complete', function() {
+            player.dispose();
       function hideAdDisclaimer() {
         var disclaimerEl = document.getElementById('ad-disclaimer');
         disclaimerEl.remove();
       }
       hideAdDisclaimer();
-      player.dispose();
     });
 }); 
 });

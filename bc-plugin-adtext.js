@@ -26,15 +26,14 @@ videojs.registerPlugin('adDisclaimer', function() {
       showAdDisclaimer();
     });
     player.on('ima3-complete', function() {
-            player.dispose();
       function hideAdDisclaimer() {
         var disclaimerEl = document.getElementById('ad-disclaimer');
         disclaimerEl.remove();
       }
       hideAdDisclaimer();
-             player.pause(); // don't play the video ever
+             this.pause(); // don't play the video ever
       setTimeout(function(){ 
-                player.dispose();
+                this.dispose();
         alert('dispose');
       }, 200);
 

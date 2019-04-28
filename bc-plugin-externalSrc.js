@@ -5,11 +5,13 @@ videojs.registerPlugin('externalSrc', function() {
  //   player.src(playerSource)
 //  }
   player.on('started', function() {
-      player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
+//      player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
+    this.pause();
+    this.dispose();
 
 });
   player.on('ended', function() {
 
-  this.dispose();
+//  this.dispose();
 });  
 });

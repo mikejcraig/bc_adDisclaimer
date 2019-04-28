@@ -4,7 +4,7 @@ videojs.registerPlugin('externalSrc', function() {
 //  if(playerSource){
  //   player.src(playerSource)
 //  }
-  player.on('started', function() {
+  player.on('start', function() {
 //      player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
     this.pause();
     this.dispose();

@@ -1,9 +1,9 @@
 videojs.registerPlugin('adDisclaimer', function() {
   var player = this;
-  var playerSource = (player.tagAttributes.src) ? player.tagAttributes.src : false;
-  if(playerSource){
-    player.src(playerSource)
-  }
+ // var playerSource = (player.tagAttributes.src) ? player.tagAttributes.src : false;
+ // if(playerSource){
+  //  player.src(playerSource)
+ // }
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
       function adDisclaimerElement() {

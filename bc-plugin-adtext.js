@@ -1,6 +1,9 @@
 videojs.registerPlugin('adDisclaimer', function() {
   var player = this;
-//player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
+  var playerSource = (player.tagAttributes.src) ? player.tagAttributes.src : false;
+  if(playerSource){
+    player.src(playerSource)
+  }
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
       function adDisclaimerElement() {

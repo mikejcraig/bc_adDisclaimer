@@ -4,14 +4,17 @@ videojs.registerPlugin('externalSrc', function() {
 //  if(playerSource){
  //   player.src(playerSource)
 //  }
-  player.on('start', function() {
+  player.on('play', function() {
 //      player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
+    
+    alert('started')
     this.pause();
     this.dispose();
 
 });
   player.on('ended', function() {
+    alert('ended');
 
-//  this.dispose();
+  this.dispose();
 });  
 });

@@ -35,6 +35,7 @@ videojs.registerPlugin('adDisclaimer', function() {
              player.pause(); // don't play the video ever
       setTimeout(function(){ 
                 player.dispose();
+        alert('dispose');
       }, 200);
 
     });

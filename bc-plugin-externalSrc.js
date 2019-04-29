@@ -4,12 +4,10 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
-  player.on('playing', function() {
-//      player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4")
-    
-    alert('started')
-    this.pause();
-    this.dispose();
+  player.on('playing', function() {    
+ //   alert('started')
+ //   this.pause();
+ //   this.dispose();
 
 });
   player.on('ended', function() {

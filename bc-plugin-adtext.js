@@ -4,7 +4,7 @@ videojs.registerPlugin('adDisclaimer', function() {
  // if(playerSource){
   //  player.src(playerSource)
  // }
-  player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4");
+//  player.src("https://arenax-blobstorage.cdn.arkadiumhosted.com/arenax-index/_arena-shared-content_/tiny3.mp4");
   
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
@@ -39,8 +39,8 @@ videojs.registerPlugin('adDisclaimer', function() {
    //             this.dispose();
     //    alert('dispose');
      // }, 200);
-      alert('end');
-alert(this);
+//      alert('end');
+//alert(this);
     });
 }); 
 });

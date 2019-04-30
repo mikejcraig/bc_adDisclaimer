@@ -9,6 +9,10 @@ videojs.registerPlugin('adDisclaimer', function() {
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
    //   alert('start');
+      var player = this;
+      var playerId = player.id();
+      document.getElementById(playerId).style.minHeight = "360px";
+      
       function adDisclaimerElement() {
         var disclaimerEl = document.createElement('div');
         disclaimerEl.setAttribute("id", "ad-disclaimer");

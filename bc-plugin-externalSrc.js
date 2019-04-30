@@ -14,5 +14,13 @@ videojs.registerPlugin('externalSrc', function() {
  //   alert('ended');
 
 //  this.dispose();
-});  
+});
+    player.on('loadedmetadata', function() {
+      player.on('ima3-started', function() {
+   //   alert('start');
+      var player = this;
+      var playerId = player.id();
+      document.getElementById(playerId).style.minHeight = "360px";
+      });
+    });
 });

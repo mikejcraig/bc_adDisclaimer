@@ -4,11 +4,6 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
-player.ima3({
-  ima3SdkSettings: {
-    "disableCustomPlaybackForIOS10Plus": true
-  }
-})	
   player.ready(function(){
 		var myPlayer = this;
 		var playerId = myPlayer.id();

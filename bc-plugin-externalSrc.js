@@ -8,7 +8,7 @@ videojs.registerPlugin('externalSrc', function() {
    //   alert('start');
       var myplayer = this;
       var playerId = myplayer.id();
-        alert(playerId);
+      //  alert(playerId);
       document.getElementById(playerId).style.minHeight = "360px";
       });
   player.on('playing', function() {    

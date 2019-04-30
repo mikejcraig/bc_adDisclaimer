@@ -4,7 +4,7 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
-bc(player).ima3.disableCustomPlaybackForIOS10Plus = "true";
+player.ima3.disableCustomPlaybackForIOS10Plus = "true";
 
   player.ready(function(){
 		var myPlayer = this;

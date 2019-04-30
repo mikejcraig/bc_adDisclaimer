@@ -9,6 +9,9 @@ videojs.registerPlugin('externalSrc', function() {
       var myplayer = this;
       var playerId = myplayer.id();
       //  alert(playerId);
+          console.log(playerId);
+                    console.log(document.getElementById(playerId));
+
       document.getElementById(playerId).style.minHeight = "360px";
       });
   player.on('playing', function() {    

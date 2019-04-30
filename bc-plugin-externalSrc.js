@@ -4,13 +4,13 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
-player.ima3.disableCustomPlaybackForIOS10Plus = "true";
-
   player.ready(function(){
 		var myPlayer = this;
 		var playerId = myPlayer.id();
 		var playerContainerId = document.getElementById(player.children()[0].id);
 		playerContainerId.style.display = "none";
+	  myPlayer.ima3.disableCustomPlaybackForIOS10Plus = "true";
+
 	});
         player.on('ima3-loaded', function() {
    //   alert('start');

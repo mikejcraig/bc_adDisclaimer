@@ -4,6 +4,12 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
+  player.ready(function(){
+		var myPlayer = this;
+		var playerId = myPlayer.id();
+		var playerContainerId = document.getElementById(player.children()[0].id);
+		playerContainerId.style.display = "none";
+	});
         player.on('ima3-loaded', function() {
    //   alert('start');
       var myplayer = this;

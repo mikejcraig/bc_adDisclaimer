@@ -20,6 +20,7 @@ videojs.registerPlugin('externalSrc', function() {
    //   alert('start');
       var player = this;
       var playerId = player.id();
+        alert(playerId);
       document.getElementById(playerId).style.minHeight = "360px";
       });
     });

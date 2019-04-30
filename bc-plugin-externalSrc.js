@@ -4,6 +4,13 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
+        player.on('ima3-started', function() {
+   //   alert('start');
+      var player = this;
+      var playerId = player.id();
+        alert(playerId);
+      document.getElementById(playerId).style.minHeight = "360px";
+      });
   player.on('playing', function() {    
  //   alert('started')
  //   this.pause();
@@ -15,13 +22,5 @@ videojs.registerPlugin('externalSrc', function() {
 
 //  this.dispose();
 });
-    player.on('loadedmetadata', function() {
-      player.on('ima3-started', function() {
-   //   alert('start');
-      var player = this;
-      var playerId = player.id();
-        alert(playerId);
-      document.getElementById(playerId).style.minHeight = "360px";
-      });
-    });
+
 });

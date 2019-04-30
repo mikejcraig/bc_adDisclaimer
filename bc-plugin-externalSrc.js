@@ -6,8 +6,8 @@ videojs.registerPlugin('externalSrc', function() {
   }
         player.on('ima3-started', function() {
    //   alert('start');
-      var player = this;
-      var playerId = player.id();
+      var myplayer = this;
+      var playerId = myplayer.id();
         alert(playerId);
       document.getElementById(playerId).style.minHeight = "360px";
       });

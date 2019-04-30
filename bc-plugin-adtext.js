@@ -42,5 +42,9 @@ videojs.registerPlugin('adDisclaimer', function() {
 //      alert('end');
 //alert(this);
     });
+    player.on('ads-volumechange',function(){
+  var myPlayer = this;
+myPlayer.mute(false);
+});
 }); 
 });

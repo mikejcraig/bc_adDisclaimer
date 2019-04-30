@@ -4,7 +4,7 @@ videojs.registerPlugin('externalSrc', function() {
   if(playerSource){
     player.src(playerSource)
   }
-        player.on('ima3-ready', function() {
+        player.on('ima3-loaded', function() {
    //   alert('start');
       var myplayer = this;
       var playerId = myplayer.id();

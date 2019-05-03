@@ -3,8 +3,8 @@ videojs.registerPlugin('adDisclaimer', function() {
   player.on('loadedmetadata', function() {
     player.on('ima3-started', function() {
       function adDisclaimerElement() {
-        var disclaimerEl = document.createElement('div');
-        disclaimerEl.setAttribute("id", "ad-disclaimer");
+        var disclaimerEl = document.createElement('p');
+        disclaimerEl.setAttribute("class", "bc-ad-disclaimer");
         disclaimerEl.innerHTML = "Advertisement";
         return disclaimerEl;
   }

@@ -1,45 +1,34 @@
-"use strict";
+videojs.registerPlugin('adDisclaimer', function() {
 
-videojs.registerPlugin('adDisclaimer', function () {
-  var _this = this;
-
-  this.on('loadedmetadata', function () {
-    _this.on('ima3-started', function () {
-      alert(_this.id());
-
-      var adDisclaimerElement = function adDisclaimerElement() {
-        var disclaimerEl = document.createElement('h3');
-        disclaimerEl.setAttribute('class', 'ad-disclaimer');
-        disclaimerEl.innerText = 'Advertisement';
-        return disclaimerEl;
-      };
-
-      var spacerElement = function spacerElement() {
-        //  const spacerEl = document.getElementsByClassName('vjs-spacer')[1];
-        var spacerElParent = _this.player().controlBar.customControlSpacer.id();
-
-        var spacerEl = document.getElementById(spacerElParent);
-        return spacerEl;
-      };
-
-      var appendAdDisclaimer = function appendAdDisclaimer(spacerEl, disclaimerEl) {
-        spacerEl.appendChild(disclaimerEl);
-      };
-
-      var showAdDisclaimer = function showAdDisclaimer() {
-        appendAdDisclaimer(spacerElement(), adDisclaimerElement());
-      };
-
-      showAdDisclaimer();
-    });
-
-    _this.on('ima3-complete', function () {
-      var hideAdDisclaimer = function hideAdDisclaimer() {
-        var disclaimerEl = document.getElementsByClassName('ad-disclaimer');
-        disclaimerEl.remove();
-      };
-
-      hideAdDisclaimer();
-    });
+this.on('loadedmetadata', () => {
+  this.on('ima3-started', () => {
+    alert(this.id());
+    const adDisclaimerElement = () => {
+      const disclaimerEl = document.createElement('h3');
+      disclaimerEl.setAttribute('class', 'ad-disclaimer');
+      disclaimerEl.innerText = 'Advertisement';
+      return disclaimerEl;
+    };
+    const spacerElement = () => {
+      const spacerEl = this.getElementsByClassName('vjs-spacer')[1];
+      // const spacerElParent = this.player().controlBar.customControlSpacer.id();
+      // const spacerEl = document.getElementById(spacerElParent);
+      return spacerEl;
+    };
+    const appendAdDisclaimer = (spacerEl, disclaimerEl) => {
+      spacerEl.appendChild(disclaimerEl);
+    };
+    const showAdDisclaimer = () => {
+      appendAdDisclaimer(spacerElement(), adDisclaimerElement());
+    };
+    showAdDisclaimer();
   });
+  this.on('ima3-complete', () => {
+    const hideAdDisclaimer = () => {
+      const disclaimerEl = document.getElementsByClassName('ad-disclaimer');
+      disclaimerEl.remove();
+    };
+    hideAdDisclaimer();
+  });
+});
 });

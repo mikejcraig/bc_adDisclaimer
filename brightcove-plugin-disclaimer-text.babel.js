@@ -4,11 +4,7 @@ videojs.registerPlugin('adDisclaimer', function() {
 
 this.on('loadedmetadata', () => {
   this.on('ima3-started', () => {
-    alert(this.id);
-    showAdDisclaimer();
-    const showAdDisclaimer = () => {
-      appendAdDisclaimer(spacerElement(), adDisclaimerElement());
-    }
+    alert(this.id());
     const adDisclaimerElement = () => {
       const disclaimerEl = document.createElement('h3');
       disclaimerEl.setAttribute("class", "ad-disclaimer");
@@ -22,6 +18,10 @@ this.on('loadedmetadata', () => {
     const appendAdDisclaimer = (spacerEl, disclaimerEl) => {
       spacerEl.appendChild(disclaimerEl);
     }
+    const showAdDisclaimer = () => {
+      appendAdDisclaimer(spacerElement(), adDisclaimerElement());
+    }
+    showAdDisclaimer();
   });
   this.on('ima3-complete', () => {
     const hideAdDisclaimer = () => {

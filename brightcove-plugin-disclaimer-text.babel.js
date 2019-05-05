@@ -10,7 +10,7 @@ this.on('loadedmetadata', () => {
       return disclaimerEl;
     };
     const spacerElement = () => {
-      const spacerEl = this.getElementsByClassName('vjs-spacer')[1];
+      const spacerEl = document.getElementsByClassName('vjs-spacer')[1];
       // const spacerElParent = this.player().controlBar.customControlSpacer.id();
       // const spacerEl = document.getElementById(spacerElParent);
       return spacerEl;

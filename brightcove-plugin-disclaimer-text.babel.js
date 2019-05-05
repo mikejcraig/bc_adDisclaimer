@@ -1,7 +1,5 @@
 videojs.registerPlugin('adDisclaimer', function() {
 
-//const player = this;
-
 this.on('loadedmetadata', () => {
   this.on('ima3-started', () => {
     alert('');

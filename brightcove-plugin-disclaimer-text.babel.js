@@ -15,7 +15,10 @@ videojs.registerPlugin('adDisclaimer', function () {
       };
 
       var spacerElement = function spacerElement() {
-        var spacerEl = document.getElementsByClassName('vjs-spacer')[1];
+        //  const spacerEl = document.getElementsByClassName('vjs-spacer')[1];
+        var spacerElParent = _this.player().controlBar.customControlSpacer.id();
+
+        var spacerEl = document.getElementById(spacerElParent);
         return spacerEl;
       };
 

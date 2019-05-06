@@ -15,7 +15,7 @@ player.on('loadedmetadata', () => {
       return disclaimerEl;
     };
     const spacerElement = () => {
-      const spacerEl = document.getElementsByClassName('vjs-spacer')[1];
+      const spacerEl = playerControlBarContainer;
       // const spacerElParent = this.player().controlBar.customControlSpacer.id();
       // const spacerEl = document.getElementById(spacerElParent);
       return spacerEl;

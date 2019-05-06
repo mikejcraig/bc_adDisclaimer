@@ -5,7 +5,6 @@ videojs.registerPlugin('adDisclaimer', function () {
 
   this.on('loadedmetadata', function () {
     _this.on('ima3-started', function () {
-      alert(_this.id());
 
       var adDisclaimerElement = function adDisclaimerElement() {
         var disclaimerEl = document.createElement('p');

@@ -4,7 +4,7 @@ this.on('loadedmetadata', () => {
   this.on('ima3-started', () => {
     alert(this.id());
     const adDisclaimerElement = () => {
-      const disclaimerEl = document.createElement('h3');
+      const disclaimerEl = document.createElement('p');
       disclaimerEl.setAttribute('class', 'ad-disclaimer');
       disclaimerEl.innerText = 'Advertisement';
       return disclaimerEl;

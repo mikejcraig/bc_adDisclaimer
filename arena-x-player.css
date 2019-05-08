@@ -5,3 +5,9 @@
 .bc-player-6QHWscEzy_default.vjs-play-button-shape-rectangle .vjs-big-play-button:hover {
 	background-color: #dfaa38;
 }
+
+@media only screen and (max-width:425px) {
+	.video-js.bc-player-6QHWscEzy_default {
+	    max-height: 123px;
+	}
+}

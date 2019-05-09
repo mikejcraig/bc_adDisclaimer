@@ -1,9 +1,10 @@
 .video-js.bc-player-6QHWscEzy_default.vjs-has-started {
 	background: #000;
 	min-height: 360px;
+	display: flex;
 }
-.video-js.bc-player-6QHWscEzy_default.vjs-has-started > .vjs-tech {
-	/*display: none;*/
+.ie11 .video-js.bc-player-6QHWscEzy_default > .vjs-tech {
+	display: none;
 }
 /* vjs-ended */
 

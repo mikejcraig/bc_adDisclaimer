@@ -2,6 +2,6 @@
 
 @media (max-width: 768px) {
 .vjs-control-bar.vjs-ad-control-bar {
-display: none !important;
+display: none;
 }
 }

@@ -15,4 +15,7 @@ height: 35px;
   .bc-player-JlvJnROgWL_default .vjs-time-control {
     align-items: center;
   }
+  .vjs-button.vjs-mute-control > .vjs-icon-placeholder {
+        line-height: 1.4;
+  }
 }

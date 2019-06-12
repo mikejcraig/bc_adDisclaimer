@@ -4,6 +4,7 @@
 .vjs-control-bar.vjs-ad-control-bar {
 display: none !important;
 }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .bc-player-JlvJnROgWL_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after {

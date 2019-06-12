@@ -1,13 +1,18 @@
 .brightcove-container .ad-disclaimer{font-size:1.2em;margin:0 0 0 .4em}.brightcove-container .vjs-layout-small .ad-disclaimer{margin:0}.bc-player-6QHWscEzy_default .ad-disclaimer{color:#000}.brightcove-container .vjs-ad-playing .vjs-spacer{-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {*/
 /*.vjs-control-bar.vjs-ad-control-bar {
 display: none;
 }*/
+@media (max-width: 1024px) {
+
   .bc-player-JlvJnROgWL_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after {
 position: relative;
   }
   .vjs-control-bar.vjs-control-bar.vjs-ad-control-bar.vjs-ad-control-bar {
 height: 35px;
 }
+  .bc-player-JlvJnROgWL_default .vjs-time-control {
+    align-items: center;
+  }
 }

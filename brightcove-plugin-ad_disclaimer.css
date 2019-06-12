@@ -2,7 +2,7 @@
 
 @media (max-width: 768px) {
 .vjs-control-bar.vjs-ad-control-bar {
-display: none;
+display: none !important;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 

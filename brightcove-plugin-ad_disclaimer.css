@@ -4,6 +4,10 @@
 .brightcove-container .vjs-control-bar.vjs-ad-control-bar {
 display: none;
 }
+  .brightcove-container .vjs-has-started .vjs-control-bar {
+display: none;
+}
+  
   .vjs-ima3-ad-container {
     z-index: 20;
   }

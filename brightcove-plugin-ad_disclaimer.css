@@ -4,7 +4,7 @@
 .vjs-control-bar.vjs-ad-control-bar {
 display: none !important;
 }
-  .brightcove-container .vjs-has-started .vjs-control-bar {
+.brightcove-container > .video-js .vjs-control-bar.vjs-ad-control-bar {
 display: none;
 }
   

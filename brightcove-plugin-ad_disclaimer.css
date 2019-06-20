@@ -4,7 +4,7 @@
 .vjs-control-bar.vjs-ad-control-bar {
 display: none !important;
 }
-.bc-player-JlvJnROgWL_default.vjs-ad-playing .vjs-progress-control .vjs-mouse-display{z-index:0; display: none;}
+.bc-player-JlvJnROgWL_default.vjs-ad-playing .vjs-progress-control .vjs-mouse-display{z-index:0;}
 
 .brightcove-container > .video-js .vjs-control-bar.vjs-ad-control-bar {
 display: none;

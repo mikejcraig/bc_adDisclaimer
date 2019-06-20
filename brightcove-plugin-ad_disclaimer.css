@@ -4,6 +4,8 @@
 .vjs-control-bar.vjs-ad-control-bar {
 display: none !important;
 }
+  .bc-player-JlvJnROgWL_default .vjs-progress-control .vjs-mouse-display {z-index:0 !important;}
+
 .brightcove-container > .video-js .vjs-control-bar.vjs-ad-control-bar {
 display: none;
 }

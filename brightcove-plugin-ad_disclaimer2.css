@@ -3,8 +3,10 @@
 .bc-player-6QHWscEzy_default .ad-disclaimer{color:#000}
 .brightcove-container .vjs-ad-playing .vjs-spacer{-webkit-box-align:center;align-items:center}
 @media only screen and (min-width:768px) and (max-width:1024px){
-  .brightcove-container>.video-js .vjs-control-bar.vjs-ad-control-bar{display:none}
-.bc-player-JlvJnROgWL_default.vjs-ad-playing .vjs-progress-control .vjs-mouse-display{z-index:0 !important;}
+/*   .brightcove-container>.video-js .vjs-control-bar.vjs-ad-control-bar{display:none} */
+  .brightcove-container>.video-js .vjs-control-bar{display:none !important}
+
+  .bc-player-JlvJnROgWL_default.vjs-ad-playing .vjs-progress-control .vjs-mouse-display{z-index:0 !important;}
 
 
 }

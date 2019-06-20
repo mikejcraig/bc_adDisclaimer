@@ -16,7 +16,7 @@ display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-.bc-player-JlvJnROgWL_default .vjs-progress-control .vjs-mouse-display{z-index:0}
+.bc-player-JlvJnROgWL_default .vjs-progress-control .vjs-mouse-display{z-index:0 !important;}
   .bc-player-JlvJnROgWL_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after {
 position: relative;
   }

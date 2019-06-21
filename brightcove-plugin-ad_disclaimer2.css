@@ -18,12 +18,12 @@ border: none;
 display: none;  
 }
 
-.vjs-ima3-not-playing-yet .vjs-big-play-button {
+.bc-player-JlvJnROgWL_default.vjs-ima3-not-playing-yet .vjs-big-play-button {
 display:block;
 }
-.vjs-control-bar, .vjs-has-started .vjs-control-bar {
+.bc-player-JlvJnROgWL_default .vjs-control-bar, .bc-player-JlvJnROgWL_default.vjs-has-started .vjs-control-bar {
     display: none !important;
 }
-.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+.bc-player-JlvJnROgWL_default .vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
     display: none !important;
 }

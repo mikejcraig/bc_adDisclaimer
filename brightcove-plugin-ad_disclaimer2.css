@@ -14,12 +14,12 @@ display: none;
 }
 
 .vjs-ima3-not-playing-yet .vjs-big-play-button {
-display:block;
+display:none;
 }
 .vjs-control-bar, .vjs-has-started .vjs-control-bar {
     display: none !important;
 }
-  .vjs-control-bar.vjs-control-bar.vjs-ad-control-bar.vjs-ad-control-bar, .vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
     display: none !important;
 }
 }

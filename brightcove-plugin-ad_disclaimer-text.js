@@ -10,7 +10,9 @@ videojs.registerPlugin('adDisclaimer', function () {
 
     _this.on('ima3-started', function () {
       $aarpe('.bc-style-JlvJnROgWL-default').remove();
-$aarpe('.vjs-control-bar').hide();
+      $aarpe('.vjs-control-bar').hide();
+      $aarpe('.vjs-big-play-button ').hide();
+
       var adDisclaimerElement = function adDisclaimerElement() {
         var disclaimerEl = document.createElement('p');
         disclaimerEl.setAttribute('class', 'ad-disclaimer');

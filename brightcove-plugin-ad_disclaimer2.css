@@ -31,3 +31,6 @@ display:block;
   display: none !important;
   visibility: hidden !important;
 }
+.bc-player-JlvJnROgWL_default.vjs-has-started .vjs-control-bar {
+    display: none !important;
+}

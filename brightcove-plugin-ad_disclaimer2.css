@@ -16,4 +16,9 @@
 
 .brightcove-container .vjs-big-play-button {
 border: none;
+display: none;  
+}
+
+.brightcove-container .vjs-ima3-not-playing-yet .vjs-big-play-button {
+display:block;
 }

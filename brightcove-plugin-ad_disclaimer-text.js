@@ -9,8 +9,9 @@ videojs.registerPlugin('adDisclaimer', function () {
     var playerControlBarContainer = document.querySelectorAll('#' + playerId + ' .vjs-spacer')[1];
 
     _this.on('ima3-started', function () {
-      $aarpe('.vjs-control-bar').hide();
-      $aarpe('.vjs-big-play-button').hide();
+      $aarpe('.vjs-control-bar, .vjs-big-play-button').css('display','none');
+
+   //   $aarpe('.vjs-big-play-button').hide();
       $aarpe('.bc-style-JlvJnROgWL-default').remove();
 
       var adDisclaimerElement = function adDisclaimerElement() {

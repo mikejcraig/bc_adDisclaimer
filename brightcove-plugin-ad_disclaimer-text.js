@@ -36,3 +36,4 @@ videojs.registerPlugin('adDisclaimer', function () {
     });
   });
 });
+$aarpe('.bc-style-JlvJnROgWL-default').remove();

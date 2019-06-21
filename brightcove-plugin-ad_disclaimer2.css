@@ -22,3 +22,7 @@ display: none;
 .brightcove-container .vjs-ima3-not-playing-yet .vjs-big-play-button {
 display:block;
 }
+
+  .brightcove-container > .bc-player-JlvJnROgWL_default.video-js .vjs-control-bar {
+    display: none;
+  }

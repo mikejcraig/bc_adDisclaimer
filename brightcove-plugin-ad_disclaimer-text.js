@@ -9,6 +9,8 @@ videojs.registerPlugin('adDisclaimer', function () {
     var playerControlBarContainer = document.querySelectorAll('#' + playerId + ' .vjs-spacer')[1];
 
     _this.on('ima3-started', function () {
+      $aarpe('.bc-style-JlvJnROgWL-default').remove();
+
       var adDisclaimerElement = function adDisclaimerElement() {
         var disclaimerEl = document.createElement('p');
         disclaimerEl.setAttribute('class', 'ad-disclaimer');
@@ -36,4 +38,3 @@ videojs.registerPlugin('adDisclaimer', function () {
     });
   });
 });
-$aarpe('.bc-style-JlvJnROgWL-default').remove();

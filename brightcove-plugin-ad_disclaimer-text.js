@@ -36,6 +36,7 @@ videojs.registerPlugin('adDisclaimer', function () {
       var hideAdDisclaimer = function hideAdDisclaimer() {
         playerControlBarContainer.remove();
       };
+      $aarpe('.vjs-big-play-button').css('display','none');
 
       hideAdDisclaimer();
     });

@@ -14,7 +14,7 @@ display: none;
 }
 
 .vjs-ima3-not-playing-yet .vjs-big-play-button {
-display:none;
+display:block;
 }
 .vjs-control-bar, .vjs-has-started .vjs-control-bar {
     display: none !important;

@@ -1,0 +1,9 @@
+.vjs-has-started .vjs-control-bar {
+    display: none !important;
+}
+.vjs-has-started .vjs-control-bar {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: none !important;
+}

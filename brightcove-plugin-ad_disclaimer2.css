@@ -27,3 +27,6 @@ display:block;
 .bc-player-JlvJnROgWL_default .vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
     display: none !important;
 }
+.bc-player-JlvJnROgWL_default.vjs-has-started .vjs-control-bar {
+  display: none !important;
+}

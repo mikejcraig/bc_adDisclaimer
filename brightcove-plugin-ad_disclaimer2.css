@@ -37,3 +37,9 @@ display:block;
 .bc-player-JlvJnROgWL_default.vjs-has-started .vjs-control-bar {
     display: none !important;
 }
+.vjs-has-started .vjs-control-bar {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: none;
+}

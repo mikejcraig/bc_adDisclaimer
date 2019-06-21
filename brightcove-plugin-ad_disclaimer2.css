@@ -20,6 +20,6 @@ display: none;
 .bc-player-JlvJnROgWL_default.vjs-ima3-not-playing-yet .vjs-big-play-button {
 display:block;
 }
-.bc-player-JlvJnROgWL_default .vjs-control-bar {
-    display: none;
+.bc-player-JlvJnROgWL_default .vjs-control-bar, .vjs-has-started .vjs-control-bar {
+    display: none !important;
 }

@@ -10,6 +10,7 @@ videojs.registerPlugin('adDisclaimer', function () {
 
     _this.on('ima3-started', function () {
         var windowWidthScrn = document.documentElement.clientWidth;
+      alert(windowWidthScrn);
         if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
           console.log('tablet');
         $aarpe('.vjs-control-bar, .vjs-big-play-button').css('display','none');

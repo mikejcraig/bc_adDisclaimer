@@ -9,10 +9,13 @@ videojs.registerPlugin('adDisclaimer', function () {
     var playerControlBarContainer = document.querySelectorAll('#' + playerId + ' .vjs-spacer')[1];
 
     _this.on('ima3-started', function () {
-      $aarpe('.vjs-control-bar, .vjs-big-play-button').css('display','none');
+        var windowWidthScrn = document.documentElement.clientWidth;
+        if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
+        $aarpe('.vjs-control-bar, .vjs-big-play-button').css('display','none');
 
    //   $aarpe('.vjs-big-play-button').hide();
-      $aarpe('.bc-style-JlvJnROgWL-default').remove();
+        $aarpe('.bc-style-JlvJnROgWL-default').remove();
+        }
 
       var adDisclaimerElement = function adDisclaimerElement() {
         var disclaimerEl = document.createElement('p');

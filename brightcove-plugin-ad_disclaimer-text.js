@@ -10,7 +10,8 @@ videojs.registerPlugin('adDisclaimer', function () {
 
     _this.on('ima3-started', function () {
         var windowWidthScrn = document.documentElement.clientWidth;
-      alert(windowWidthScrn + ' ' + windowWidthScrn > 767 && windowWidthScrn < 1025);
+      alert(windowWidthScrn);
+      alert(windowWidthScrn > 767 && windowWidthScrn < 1025);
         if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
                 alert('windowWidthScrn true');
 

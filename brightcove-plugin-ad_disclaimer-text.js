@@ -30,7 +30,8 @@ videojs.registerPlugin('adDisclaimer', function () {
       };
 
       var appendAdDisclaimer = function appendAdDisclaimer(spacerEl, disclaimerEl) {
-        spacerEl.appendChild(disclaimerEl);
+//         Add this back later
+//         spacerEl.appendChild(disclaimerEl);
       };
 
       var showAdDisclaimer = function showAdDisclaimer() {

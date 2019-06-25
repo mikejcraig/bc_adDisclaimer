@@ -38,7 +38,7 @@ videojs.registerPlugin('adDisclaimer', function () {
         appendAdDisclaimer(playerControlBarContainer, adDisclaimerElement());
       };
 
-      showAdDisclaimer();
+//       showAdDisclaimer();
     });
 
     _this.on('ima3-complete', function () {

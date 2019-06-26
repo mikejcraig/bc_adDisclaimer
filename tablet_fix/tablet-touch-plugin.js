@@ -1,6 +1,6 @@
 "use strict";
 
-videojs.registerPlugin('tabletTouchSkipButton', function () {
+videojs.registerPlugin('tabletTouchSkipButton1', function () {
   var _this = this;
 
   this.on('loadedmetadata', function () {

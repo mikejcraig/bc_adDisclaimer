@@ -2,7 +2,7 @@
 	background: #000;
 	min-height: 360px;
 }
-@media only screen and (min-width:1024px) {
+@media (min-width: 1281px) {
 	.video-js.bc-player-6QHWscEzy_default > .vjs-tech {
 		display: none;
 	}

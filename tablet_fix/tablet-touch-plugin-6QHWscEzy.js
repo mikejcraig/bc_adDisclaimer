@@ -12,7 +12,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
         if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
         console.log('tablet');
         $aarpe('.vjs-control-bar, .vjs-big-play-button').css('display','none');
-        $aarpe('.bc-style-6QHWscEzy-default').remove();
+//         $aarpe('.bc-style-6QHWscEzy-default').remove();
         }
 
     });

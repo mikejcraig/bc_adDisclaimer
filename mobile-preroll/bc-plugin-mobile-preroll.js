@@ -16,3 +16,4 @@ videojs.registerPlugin('mobilePreroll', function() {
   }
 });
 });
+});

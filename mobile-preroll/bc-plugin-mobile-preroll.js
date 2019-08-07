@@ -10,8 +10,10 @@ videojs.registerPlugin('mobilePreroll', function() {
 
 }); 
       player.on('ima3-ready', function () {
-    player.ima3({
-  ima3SdkSettings: {
-    "disableCustomPlaybackForIOS10Plus": true
-  }
-});});});
+//     player.ima3({
+//   ima3SdkSettings: {
+//     "disableCustomPlaybackForIOS10Plus": true
+//   }
+// })
+        window.google.ima.settings.l = true;
+      });});

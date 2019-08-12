@@ -1,6 +1,5 @@
 @media only screen and (max-width:1024px){
-
-.vjs-ima3-ad-container,.vjs-ima3-click-tracker {
-    pointer-events: all !important;
-}
+	.video-js.vjs-mouse.vjs-ima3-html5.vjs-ad-playing .vjs-ima3-ad-container {
+	    pointer-events: all;
+	}
 }

@@ -1,6 +1,6 @@
 @media only screen and (max-width:1024px){
 
-.vjs-ima3-ad-container,.vjs-ima3-click-tracker {
+.vjs-ima3-ad-container {
     pointer-events: all !important;
 }
 }

@@ -1,21 +1,9 @@
 videojs.registerPlugin('mobilePreroll', function() {
   var player = this;
-x = this.id_;
-y = document.getElementById(x);
-y.firstElementChild.setAttribute("playsinline", "");
+  google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+
   player.on('loadedmetadata', function() {
-
-   window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
-   // window.google.ima.settings.l = true
-
-
+  google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
 
 }); 
-      player.on('ima3-ready', function () {
-//     player.ima3({
-//   ima3SdkSettings: {
-//     "disableCustomPlaybackForIOS10Plus": true
-//   }
-// })
-        window.google.ima.settings.l = true;
-      });});
+});

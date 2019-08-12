@@ -1,0 +1,15 @@
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+.vjs-has-started .vjs-control-bar {
+    display: none !important;
+}
+.vjs-has-started .vjs-control-bar {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: none !important;
+}
+.vjs-ima3-ad-container,.vjs-ima3-click-tracker {
+    pointer-events: all !important;
+}
+}

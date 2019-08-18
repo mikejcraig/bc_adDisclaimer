@@ -17,9 +17,14 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 videojs.registerPlugin('mobileAdsPreroll', function () {
   var player = document.getElementById(this.id());
-  player.firstElementChild.setAttribute('playsinline', '');
+  var playerContainer = player.firstElementChild;
+
+  if (playerContainer) {
+    playerContainer.setAttribute('playsinline', '');
+  }
+
   this.on('loadedmetadata', function () {
-    if (_typeof(window.google.ima) == 'object') {
+    if (_typeof(window.google.ima) === 'object') {
       window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   });

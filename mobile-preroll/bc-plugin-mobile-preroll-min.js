@@ -8,5 +8,5 @@ y.firstElementChild.setAttribute("playsinline", "");
    window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
    // window.google.ima.settings.l = true
 });
-        window.google.ima.settings.l = true;
+//         window.google.ima.settings.l = true;
       });

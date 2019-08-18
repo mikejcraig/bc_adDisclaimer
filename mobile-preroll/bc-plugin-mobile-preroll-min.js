@@ -1,4 +1,4 @@
-videojs.registerPlugin('mobileAdsPreroll', function() {
+videojs.registerPlugin('mobilePreroll', function() {
   var player = this;
 x = this.id_;
 y = document.getElementById(x);

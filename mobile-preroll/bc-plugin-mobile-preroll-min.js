@@ -18,7 +18,7 @@ var _this = void 0;
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-videojs.registerPlugin('mobileAdsPreroll', function () {
+videojs.registerPlugin('mobilePreroll', function () {
   var x = _this.id_;
   var y = document.getElementById(x);
   y.firstElementChild.setAttribute('playsinline', '');

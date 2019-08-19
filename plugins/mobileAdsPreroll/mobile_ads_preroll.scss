@@ -1,0 +1,8 @@
+@import "settings/settings";
+@import "tools/tools";
+
+@include breakpoint-down($s-tablet) {
+	.video-js.vjs-user-active.vjs-ad-playing.vjs-ima3-html5 > .vjs-ima3-ad-container, .vjs-ima3-ad-container {
+	    pointer-events: all;
+	}
+}

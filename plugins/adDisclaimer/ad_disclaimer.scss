@@ -1,0 +1,22 @@
+@import "settings/settings";
+@import "tools/tools";
+
+.brightcove-container .ad-disclaimer {
+  font-size: t-px-to-em(12px);
+  margin: 0 0 0 t-px-to-em(4px);
+}
+.brightcove-container .vjs-layout-small .ad-disclaimer {
+  margin: 0;
+}
+.bc-player-6QHWscEzy_default .ad-disclaimer {
+  color: #000;
+}
+.brightcove-container .vjs-ad-playing .vjs-spacer {
+  align-items: center;
+}
+
+@include breakpoint-range($s-tablet, $s-laptop) {
+  .brightcove-container > .video-js .vjs-control-bar.vjs-ad-control-bar {
+    display: none;
+  }
+}

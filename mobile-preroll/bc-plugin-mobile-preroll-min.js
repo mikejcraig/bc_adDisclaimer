@@ -27,7 +27,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   this.on('loadedmetadata', function () {
     // Disable custom playback for ios
     if (_typeof(window.google.ima) === 'object') {
-      window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+   //   window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   });
   // test listener
@@ -35,8 +35,9 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
     var windowWidthScrn = document.documentElement.clientWidth;
     if (windowWidthScrn < 768) {
 //       window.google.ima.settings.l = true;
+    if (_typeof(window.google.ima) === 'object') {
       window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
-    }
+    }    }
   });
   //test this event
   this.on('ads-ad-skipped', function(event) {

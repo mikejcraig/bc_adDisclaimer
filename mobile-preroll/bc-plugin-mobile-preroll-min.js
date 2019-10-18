@@ -31,7 +31,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
     }
   });
   //test this event
-  this.on('ads-ad-ended', function(event) {
-    console.log('ads-ad-ended', event);
+  this.on('ads-ad-skipped', function(event) {
+    console.log('ads-ad-skipped', event);
   });
 });

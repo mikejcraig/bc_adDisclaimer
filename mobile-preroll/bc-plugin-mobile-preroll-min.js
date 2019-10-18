@@ -30,4 +30,8 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   });
+  //test this event
+  this.on('ads-ad-ended', function(event) {
+    console.log('ads-ad-ended', event);
+  });
 });

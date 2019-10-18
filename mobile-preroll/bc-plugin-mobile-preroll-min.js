@@ -27,7 +27,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   this.on('loadedmetadata', function () {
     // Disable custom playback for ios
     if (_typeof(window.google.ima) === 'object') {
-   //   window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+     window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   });
   // test listener

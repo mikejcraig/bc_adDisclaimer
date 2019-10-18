@@ -30,6 +30,13 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   });
+  // test listener
+    this.on('ima3-ready', function () {
+    var windowWidthScrn = document.documentElement.clientWidth;
+    if (windowWidthScrn < 768) {
+      window.google.ima.settings.l = true;
+    }
+  });
   //test this event
   this.on('ads-ad-skipped', function(event) {
     console.log('ads-ad-skipped', event);

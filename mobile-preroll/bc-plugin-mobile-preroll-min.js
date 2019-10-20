@@ -20,7 +20,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var player = document.getElementById(this.id());
   console.log(player);
     console.log(this.id());
-  this.classList.add('test');
+  player.classList.add('test');
 
   var playerContainer = player.firstElementChild; // Add the playsinline attribute to video container inside the player
 

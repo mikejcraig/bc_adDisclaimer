@@ -18,6 +18,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 videojs.registerPlugin('mobileAdsPreroll', function () {
   // Find the player
   var player = document.getElementById(this.id());
+  console.log(player);
+    console.log(this.id());
+
   var playerContainer = player.firstElementChild; // Add the playsinline attribute to video container inside the player
 
   if (!!playerContainer && playerContainer.nodeName === 'VIDEO') {

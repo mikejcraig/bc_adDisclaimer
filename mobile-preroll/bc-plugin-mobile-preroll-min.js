@@ -20,6 +20,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var player = document.getElementById(this.id());
   console.log(player);
     console.log(this.id());
+  this.classList.add('test');
 
   var playerContainer = player.firstElementChild; // Add the playsinline attribute to video container inside the player
 
@@ -45,6 +46,6 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   //test this event
   this.on('ads-ad-skipped', function(event) {
     console.log('ads-ad-skipped', event);
-    document.getElementsByClassName('bc-player-JlvJnROgWL_default')[0].classList.add('not-hover');
+    this.classList.add('not-hover');
   });
 });

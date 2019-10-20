@@ -18,9 +18,9 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 videojs.registerPlugin('mobileAdsPreroll', function () {
   // Find the player
   var player = document.getElementById(this.id());
-  console.log(player);
-    console.log(this.id());
-  player.classList.add('test');
+   console.log(player);
+//     console.log(this.id());
+//   player.classList.add('test');
 
   var playerContainer = player.firstElementChild; // Add the playsinline attribute to video container inside the player
 
@@ -46,6 +46,6 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   //test this event
   this.on('ads-ad-skipped', function(event) {
     console.log('ads-ad-skipped', event);
-    this.classList.add('not-hover');
+    player.classList.add('not-hover');
   });
 });

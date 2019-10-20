@@ -37,6 +37,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       console.log('3. ads-ad-skipped');
       player.classList.add('not-hover');
       console.log('4. ' + player.classList);
+      
     });
   }
 });

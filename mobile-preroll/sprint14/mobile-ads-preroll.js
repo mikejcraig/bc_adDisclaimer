@@ -8,11 +8,16 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var playerContainer = player.firstElementChild;
   var isMobileViewport = document.documentElement.clientWidth < 768;
 
+  var resetTouchEvent = function resetTouchEvent() {
+    if (!player.classList.contains('printcard')) {
+      player.classList.add('not-hover');
+    }
+  };
+
   if (isMobileViewport) {
     // Add the playsinline attribute to video container inside the player
     if (!!playerContainer && playerContainer.nodeName === 'VIDEO') {
       playerContainer.setAttribute('playsinline', '');
-      console.log('1. playsinline');
     }
 
     this.on('loadedmetadata', function () {
@@ -22,26 +27,17 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       }
     });
     this.on('ima3-ready', function () {
-      // var windowWidthScrn = document.documentElement.clientWidth;
-      // if (windowWidthScrn < 768) {
+      // Disable custom playback for ios
       if (_typeof(window.google.ima) === 'object') {
         window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
-        console.log('2. setDisableCustomPlaybackForIOS10Plus');
-      } // }
+      }
+    }); // Reset hover after mobile touch events
 
+    this.on('ads-ad-skipped', function () {
+      resetTouchEvent();
     });
-//     this.on('ads-ad-skipped', 'ads-ad-ended', function () {
-//       console.log('3. ads-ad-skipped, ended');
-//       player.classList.add('not-hover');
-//     });
-//     this.on('ads-ad-ended', ,function () {
-//       console.log('3. ads-ad-skipped');
-//       player.classList.add('not-hover');
-//       console.log('4. ' + player.classList);
-      
-//     });
-    this.on('ads-ad-skipped', 'ads-ad-ended', () => {
-      player.classList.add('not-hover');
+    this.on('ads-ad-ended', function () {
+      resetTouchEvent();
     });
   }
 });

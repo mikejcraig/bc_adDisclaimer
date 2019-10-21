@@ -30,15 +30,18 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       } // }
 
     });
-    this.on('ads-ad-skipped', 'ads-ad-ended', function () {
-      console.log('3. ads-ad-skipped, ended');
-      player.classList.add('not-hover');
-    });
+//     this.on('ads-ad-skipped', 'ads-ad-ended', function () {
+//       console.log('3. ads-ad-skipped, ended');
+//       player.classList.add('not-hover');
+//     });
 //     this.on('ads-ad-ended', ,function () {
 //       console.log('3. ads-ad-skipped');
 //       player.classList.add('not-hover');
 //       console.log('4. ' + player.classList);
       
 //     });
+    this.on('ads-ad-skipped','ads-ad-ended', () => {
+      player.classList.add('not-hover');
+    });
   }
 });

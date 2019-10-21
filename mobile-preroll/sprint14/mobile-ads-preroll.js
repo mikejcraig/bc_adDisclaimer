@@ -9,7 +9,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var isMobileViewport = document.documentElement.clientWidth < 768;
 
   var resetTouchEvent = function resetTouchEvent() {
-    if (!player.classList.contains('printcard')) {
+    if (!player.classList.contains('not-hover')) {
       player.classList.add('not-hover');
     }
   };

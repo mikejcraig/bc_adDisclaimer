@@ -40,7 +40,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
 //       console.log('4. ' + player.classList);
       
 //     });
-    this.on('ads-ad-skipped','ads-ad-ended', () => {
+    this.on('ads-ad-ended', () => {
       player.classList.add('not-hover');
     });
   }

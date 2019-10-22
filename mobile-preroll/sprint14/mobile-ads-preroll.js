@@ -8,6 +8,13 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var playerContainer = player.firstElementChild;
   var isMobileViewport = document.documentElement.clientWidth < 768;
 
+  var iosCustomPlaybackSetting = function iosCustomPlaybackSetting() {
+    // Disable custom playback for ios
+    if (_typeof(window.google.ima) === 'object') {
+      window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+    }
+  };
+
   var resetTouchEvent = function resetTouchEvent() {
     if (!player.classList.contains('not-hover')) {
       player.classList.add('not-hover');
@@ -21,16 +28,10 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
     }
 
     this.on('loadedmetadata', function () {
-      // Disable custom playback for ios
-      if (_typeof(window.google.ima) === 'object') {
-        window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
-      }
+      iosCustomPlaybackSetting();
     });
     this.on('ima3-ready', function () {
-      // Disable custom playback for ios
-      if (_typeof(window.google.ima) === 'object') {
-        window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
-      }
+      iosCustomPlaybackSetting();
     }); // Reset hover after mobile touch events
 
     this.on('ads-ad-skipped', function () {

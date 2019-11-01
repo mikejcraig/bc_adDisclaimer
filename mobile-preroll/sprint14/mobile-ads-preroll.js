@@ -6,7 +6,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   // Find the player
   var player = document.getElementById(this.id());
   var playerContainer = player.firstElementChild;
-  var isMobileViewport = document.documentElement.clientWidth < 1024;
+  var isMobileViewport = document.documentElement.clientWidth < 1025;
 
   var iosCustomPlaybackSetting = function iosCustomPlaybackSetting() {
     // Disable custom playback for ios

@@ -34,11 +34,11 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
       iosCustomPlaybackSetting();
     }); // Reset hover after mobile touch events
 
-    this.on('ads-ad-skipped', function () {
-    //  resetTouchEvent();
-    });
-    this.on('ads-ad-ended', function () {
-    //  resetTouchEvent();
-    });
+//     this.on('ads-ad-skipped', function () {
+//       resetTouchEvent();
+//     });
+//     this.on('ads-ad-ended', function () {
+//       resetTouchEvent();
+//     });
   }
 });

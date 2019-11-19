@@ -32,8 +32,9 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
     });
     this.on('ima3-ready', function () {
       iosCustomPlaybackSetting();
-    }); // Reset hover after mobile touch events
-
+    }); 
+    
+    // Reset hover after mobile touch events
     this.on('ads-ad-skipped', function () {
       resetTouchEvent();
     });

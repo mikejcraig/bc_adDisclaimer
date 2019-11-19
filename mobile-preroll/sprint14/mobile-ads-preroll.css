@@ -1,0 +1,5 @@
+@media only screen and (max-width:1024px) {
+  .video-js.vjs-user-active.vjs-ad-playing.vjs-ima3-html5 > .vjs-ima3-ad-container, .video-js .vjs-ima3-ad-container {
+      pointer-events: all;
+  }
+}

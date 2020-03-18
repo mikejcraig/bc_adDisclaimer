@@ -17,7 +17,7 @@ videojs.registerPlugin('adDisclaimer', function() {
       const showAdDisclaimer = () => {
         appendAdDisclaimer(playerControlBarContainer, adDisclaimerElement());
       };
-      if (adDisclaimerContainer) {
+      if (!adDisclaimerContainer) {
         showAdDisclaimer();
       }
     });

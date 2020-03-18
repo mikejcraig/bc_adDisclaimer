@@ -1,0 +1,13 @@
+.brightcove-container .ad-disclaimer {
+	font-size: 1.2em;
+	margin: 0 0 0 .4em
+	}
+.brightcove-container .vjs-layout-small .ad-disclaimer {
+	margin: 0;
+}
+.bc-player-6QHWscEzy_default .ad-disclaimer {
+	color: #000;
+}
+.brightcove-container.vjs-ad-playing .vjs-spacer {
+	align-items: center; 
+}

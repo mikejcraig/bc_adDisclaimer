@@ -2,7 +2,13 @@
 
 videojs.registerPlugin('adDisclaimer', function () {
   var _this = this;
-
+this.play().then(function() {
+  // play succeeded!
+})
+.catch(function(error) {
+  // play failed
+  console.error(error.message);
+});
   this.on('loadedmetadata', function () {
     var playerId = _this.id();
     window.aValue = localStorage.getItem('rewards_user_points');

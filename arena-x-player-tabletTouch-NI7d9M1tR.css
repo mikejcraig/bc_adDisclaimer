@@ -1,0 +1,27 @@
+.video-js.bc-player-NI7d9M1tR_default.vjs-has-started {
+	background: #000;
+	min-height: 360px;
+}
+@media (min-width: 1025px) {
+	.video-js.bc-player-NI7d9M1tR_default > .vjs-tech {
+		display: none;
+	}
+
+	.video-js.bc-player-NI7d9M1tR_default.vjs-has-started > .vjs-tech {
+		display: block;
+	}
+}
+/* vjs-ended */
+
+.bc-player-NI7d9M1tR_default.vjs-play-button-shape-rectangle .vjs-big-play-button:hover {
+	background-color: #dfaa38;
+}
+
+@media only screen and (max-width:425px) {
+	.video-js.bc-player-NI7d9M1tR_default {
+	    max-height: 123px;
+	}
+	.css-1t0w1st-Layout____Box__Box-Game____GameContainer__Container .css-izyfvc-molecules____Preroll__Player.eare7510 {
+    	min-height: 130px;
+	}
+}

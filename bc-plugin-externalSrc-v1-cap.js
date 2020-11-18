@@ -1,7 +1,6 @@
 videojs.registerPlugin('externalSrc', function() {
   var player = this;
   var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
-  var gameTarget = (window.document.getElementById('aarpAdUnitCustom') && window.document.getElementById('aarpAdUnitCustom').content == "gamename=candy-mahjongg") ? true : false;
   var setFrequencyCap = function() {
  //  	var now = new Date();
 	// var time = now.getTime();
@@ -11,12 +10,15 @@ videojs.registerPlugin('externalSrc', function() {
 	sessionStorage.setItem('aarpplaycap', 'true');
   }
   // var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
-  if(gamesStageSite && gameTarget){
+  if(gamesStageSite){
+	    var gameTarget = (window.document.getElementById('aarpAdUnitCustom') && window.document.getElementById('aarpAdUnitCustom').content == "gamename=candy-mahjongg") ? true : false;
+if( gameTarget){
 	  if(sessionStorage.getItem('aarpplaycap')) {
 	  	this.dispose();
 	  } else {
 	  	setFrequencyCap();
 	  }
+}
   }
   var playerSource = (player.tagAttributes.src) ? player.tagAttributes.src : false;
   if(playerSource){

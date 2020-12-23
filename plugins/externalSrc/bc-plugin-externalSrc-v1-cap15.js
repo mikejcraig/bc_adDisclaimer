@@ -7,7 +7,7 @@ videojs.registerPlugin('externalSrc', function() {
     var time = now.getTime();
     //5 mins 
     // 15 mins 900 * 1000
-    time += 900 * 1000;
+    time += 300 * 1000;
     now.setTime(time);
     window.document.cookie = 'bcplaycap=' + 'true' + '; expires=' + now.toUTCString() + '; path=/';
   }

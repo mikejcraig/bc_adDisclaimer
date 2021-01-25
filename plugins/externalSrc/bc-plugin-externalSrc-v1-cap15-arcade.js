@@ -37,7 +37,7 @@ videojs.registerPlugin('externalSrc', function() {
                 myPlayer = videojs.getAllPlayers()[0];
                 myPlayer.src({ type: "video/mp4", src: null });
               });
-            }, 2000);
+            }, 1000);
     	  } else {
     	  	setFrequencyCap();
     	  }

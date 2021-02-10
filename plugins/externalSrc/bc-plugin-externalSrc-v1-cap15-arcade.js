@@ -1,6 +1,6 @@
 videojs.registerPlugin('externalSrc', function() {
   var player = this;
-  var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
+  var gamesStageSite = true;
 
   var setFrequencyCap = function() {
     var now = new Date();

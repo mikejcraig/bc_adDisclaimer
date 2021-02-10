@@ -1,6 +1,6 @@
 videojs.registerPlugin('externalSrc', function() {
   var player = this;
-  var gamesStageSite = true;
+  var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
 
   var setFrequencyCap = function() {
     var now = new Date();
@@ -25,8 +25,10 @@ videojs.registerPlugin('externalSrc', function() {
   }
 
   if(gamesStageSite){
-	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade') ? true : false;
-      var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
+//	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade') ? true : false;
+	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade' || window.document.getElementsByName('aarpAdUnit').length > 3 && document.querySelector('#aarpAdUnit3').content == 'atari'
+) ? true : false;
+	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
     if(gameTarget){
     	  if(!!cookieValue) {
             window.document.getElementsByClassName('vjs-big-play-button')[0].remove();

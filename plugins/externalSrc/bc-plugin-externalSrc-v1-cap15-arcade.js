@@ -26,7 +26,7 @@ videojs.registerPlugin('externalSrc', function() {
 
   if(gamesStageSite){
 //	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade') ? true : false;
-	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade' || window.document.getElementsByName('aarpAdUnit').length > 3 && document.querySelector('#aarpAdUnit3').content == 'atari'
+	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade' || !!window.document.querySelector("#aarpAdUnitCustom") && window.document.querySelector("#aarpAdUnitCustom").content.match("atari")
 ) ? true : false;
 	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
     if(gameTarget){

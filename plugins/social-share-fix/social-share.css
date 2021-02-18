@@ -1,3 +1,3 @@
-.vjs-playing.vjs-social-overlay, .vjs-ad-playing .vjs-social-overlay  {
+.vjs-playing .vjs-social-overlay, .vjs-ad-playing .vjs-social-overlay  {
 	display: none;
 }

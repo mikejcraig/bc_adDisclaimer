@@ -22,6 +22,8 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
 //      console.log(playerContainer);
     // playerContainer.setAttribute('playsinline', true);
      playerContainer.setAttribute('playsinline','');
+     playerContainer.setAttribute('controls','');
+     class="video-js";
           console.log(playerContainer);
    }
 

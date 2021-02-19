@@ -19,7 +19,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   if (isMobileViewport) {
     // Add the playsinline attribute to video container inside the player
     if (!!playerContainer && playerContainer.nodeName === 'VIDEO') {
-      playerContainer.setAttribute('playsinline', '');
+    //  playerContainer.setAttribute('playsinline', '');
     }
 
     this.on('loadedmetadata', function () {

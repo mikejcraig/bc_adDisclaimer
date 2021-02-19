@@ -26,7 +26,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
  //     iosCustomPlaybackSetting();
     });
     this.on('ima3-ready', function () {
-      iosCustomPlaybackSetting();
+   //   iosCustomPlaybackSetting();
     });
 
   }

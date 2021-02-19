@@ -11,7 +11,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var iosCustomPlaybackSetting = function iosCustomPlaybackSetting() {
     // Disable custom playback for ios
     if (_typeof(window.google.ima) === 'object') {
-   //   window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+      window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   };
 
@@ -19,7 +19,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   if (isMobileViewport) {
     // Add the playsinline attribute to video container inside the player
     if (!!playerContainer && playerContainer.nodeName === 'VIDEO') {
-      playerContainer.setAttribute('playsinline', '');
+    //  playerContainer.setAttribute('playsinline', '');
     }
 
     this.on('loadedmetadata', function () {

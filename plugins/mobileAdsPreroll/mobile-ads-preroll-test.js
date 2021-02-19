@@ -23,7 +23,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
     // playerContainer.setAttribute('playsinline', true);
      playerContainer.setAttribute('playsinline','');
      playerContainer.setAttribute('controls','');
-     class="video-js";
+     playerContainer.classList.add("video-js");
           console.log(playerContainer);
    }
 

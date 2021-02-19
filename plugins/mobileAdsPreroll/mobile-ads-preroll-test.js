@@ -11,7 +11,7 @@ videojs.registerPlugin('mobileAdsPreroll', function () {
   var iosCustomPlaybackSetting = function iosCustomPlaybackSetting() {
     // Disable custom playback for ios
     if (_typeof(window.google.ima) === 'object') {
-      window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+   //   window.google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
     }
   };
 

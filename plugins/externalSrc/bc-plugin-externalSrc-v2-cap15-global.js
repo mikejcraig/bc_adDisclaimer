@@ -57,7 +57,7 @@ videojs.registerPlugin('externalSrc', function() {
     player.src(playerSource);
   }
 	
- player.on('ads-ad-ended',function( evt ){
+ player.on('play',function( evt ){
     localStorage.setItem('bcplaycapAdPlayed', 'true');
   });
 });

@@ -3,7 +3,7 @@ videojs.registerPlugin('externalSrc', function() {
   var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
   var gamename = document.querySelector('#aarpAdUnitCustom');
   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
-  var pageRefresh = performance.navigation.type;	
+  var pageRefresh = (typeof performance == 'object') ? performance.navigation.type : false;	
 
   var setFrequencyCap = function() {
     var now = new Date();

@@ -3,6 +3,7 @@ videojs.registerPlugin('externalSrc', function() {
   var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
   var gamename = document.querySelector('#aarpAdUnitCustom');
   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
+  var pageRefresh = performance.navigation.type;	
 
   var setFrequencyCap = function() {
     var now = new Date();
@@ -32,6 +33,7 @@ videojs.registerPlugin('externalSrc', function() {
 	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
     if(gameTarget){
     	  if(!!cookieValue) {
+	    console.log('NavigationType ' + pageRefresh);  
             window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
             setTimeout(function(){
               insertButton();

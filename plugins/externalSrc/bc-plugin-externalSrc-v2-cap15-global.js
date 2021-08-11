@@ -33,7 +33,7 @@ videojs.registerPlugin('externalSrc', function() {
 	    var gameTarget = true;
 	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
     if(gameTarget){
-    	  if(!!cookieValue) {
+    	  if(!!cookieValue && bcplaycapAdPlayed == 'true') {
 	    console.log('NavigationType ' + pageRefresh);  
             window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
             setTimeout(function(){

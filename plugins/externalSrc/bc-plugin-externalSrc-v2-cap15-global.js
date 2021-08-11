@@ -46,7 +46,6 @@ videojs.registerPlugin('externalSrc', function() {
             }, 1000);
     	  } else {
 		sessionStorage.removeItem('bcplaycapAdPlayed');
-		console.log('remove adend');
     	  	setFrequencyCap();
     	  }
     }

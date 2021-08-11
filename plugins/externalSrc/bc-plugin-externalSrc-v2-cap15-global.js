@@ -4,7 +4,7 @@ videojs.registerPlugin('externalSrc', function() {
   var gamename = document.querySelector('#aarpAdUnitCustom');
   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
   var pageRefresh = (typeof performance == 'object') ? performance.navigation.type : false;
-  var bcplaycapAdPlayed = localStorage.getItem('bcplaycapAdPlayed');
+  var bcplaycapAdPlayed = sessionStorage.getItem('bcplaycapAdPlayed');
 
   var setFrequencyCap = function() {
     var now = new Date();
@@ -45,7 +45,8 @@ videojs.registerPlugin('externalSrc', function() {
               });
             }, 1000);
     	  } else {
-		localStorage.removeItem('bcplaycapAdPlayed');
+		sessionStorage.removeItem('bcplaycapAdPlayed');
+		console.log('remove adend');
     	  	setFrequencyCap();
     	  }
     }
@@ -57,15 +58,8 @@ videojs.registerPlugin('externalSrc', function() {
     player.src(playerSource);
   }
 	
- player.on('adskip',function( evt ){
-    localStorage.setItem('bcplaycapAdPlayed', 'adskip');
-	 console.log('adskip');
+  player.on('adend', function(evt) {
+      sessionStorage.setItem('bcplaycapAdPlayed', 'true');
+      console.log('adend');
   });
- player.on('adend',function( evt ){
-    localStorage.setItem('bcplaycapAdPlayed', 'adend');
-	 console.log('adend');
-  });	
- player.on('play',function( evt ){
-    localStorage.setItem('bcplaycapAdPlayed', 'trueplaystarted');
-  });	
 });

@@ -2,8 +2,8 @@ videojs.registerPlugin('externalSrc', function() {
   var player = this;
   var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
   var gamename = document.querySelector('#aarpAdUnitCustom');
-//  var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia') && document.location.pathname == '/games/aarp-trivia') ? true : false;
-   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
+  var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia') && document.location.pathname == '/games/aarp-trivia') ? true : false;
+//   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
 
   var pageRefresh = (typeof performance == 'object') ? performance.navigation.type : false;
   var bcplaycapAdPlayed = sessionStorage.getItem('bcplaycapAdPlayed');

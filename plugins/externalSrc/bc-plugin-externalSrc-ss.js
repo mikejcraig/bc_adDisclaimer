@@ -5,6 +5,7 @@ videojs.registerPlugin('externalSrc', function() {
   var triviaGame = (gamename && gamename.content.match('gamename=aarp-trivia')) ? true : false;
   var pageRefresh = (typeof performance == 'object') ? performance.navigation.type : false;
   var bcplaycapAdPlayed = sessionStorage.getItem('bcplaycapAdPlayed');
+  var gameTarget = false;
 
   var insertButton = function() {
     var vidJs = window.document.getElementsByTagName('video-js')[0];

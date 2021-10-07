@@ -5,3 +5,7 @@
 button.vjs-big-play-button {
     display: none !important;
 }
+
+a.sharp-c-button.sharp-c-link.sharp-c-target__segment--hidden {
+    visibility: visible;
+}

@@ -48,5 +48,9 @@ videojs.registerPlugin('externalSrc', function() {
      // window.location.href = '/games-play/ss-games/path-finder/'
       window.location.href = 'https://stayingsharp-pi.aarp.org/games-play/ss-games/path-finder/'
     }
+    document.querySelector(".sharp-c-button").addEventListener("click", function(event) {
+         player.play();
+         event.preventDefault();
+}, false);
   });
 });

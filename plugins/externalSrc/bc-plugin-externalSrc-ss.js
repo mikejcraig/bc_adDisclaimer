@@ -48,7 +48,7 @@ videojs.registerPlugin('externalSrc', function() {
      // window.location.href = '/games-play/ss-games/path-finder/'
       window.location.href = 'https://stayingsharp-pi.aarp.org/games-play/ss-games/path-finder/'
     }
-    document.querySelector(".sharp-c-button").addEventListener("click", function(event) {
+    document.querySelectorAll(".sharp-c-button")[1].addEventListener("click", function(event) {
      var videojsId = document.querySelector('.video-js video');
          videojsId.play();
          event.preventDefault();

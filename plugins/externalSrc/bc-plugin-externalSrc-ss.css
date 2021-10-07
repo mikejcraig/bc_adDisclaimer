@@ -1,0 +1,7 @@
+.vjs-poster {
+    background-image: url("https://cdn.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/pathfinder-ani-thumbnail-A.imgcache.rev10c2b6efece82752f9ea2213cc4f7730.gif") !important;
+}
+
+button.vjs-big-play-button {
+    display: none !important;
+}

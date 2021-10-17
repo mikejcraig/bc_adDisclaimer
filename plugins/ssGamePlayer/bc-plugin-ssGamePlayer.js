@@ -22,16 +22,18 @@ videojs.registerPlugin('ssGamePlayer', function() {
 //          event.preventDefault();
 // }, false);
 
-document.querySelector('a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link, a.sharp-c-link').addEventListener("click", function(event) {
+document.querySelector('a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link').addEventListener("click", function(event) {
      var videojsId = document.querySelector('.video-js video');
-      alert();
-         videojsId.play();
+console.log('click blocked');
+  videojsId.play();
          event.preventDefault();
 }, false);
   
   player.on('adend', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
       window.location.href = '/games-play/ss-games/path-finder/'
+    console.log('page forwarded');
+
    // }
   });
 });

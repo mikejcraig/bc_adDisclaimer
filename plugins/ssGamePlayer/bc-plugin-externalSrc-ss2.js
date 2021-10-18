@@ -1,4 +1,4 @@
-videojs.registerPlugin('externalSrc', function() {
+videojs.registerPlugin('ssGamePlayer', function() {
   var player = this;
   var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
   var gamename = document.querySelector('#aarpAdUnitCustom');

@@ -71,8 +71,8 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 }
 
 @media only screen 
-  and (max-device-width: 767px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 767px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) { */
 
 .ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
 	    pointer-events: all;

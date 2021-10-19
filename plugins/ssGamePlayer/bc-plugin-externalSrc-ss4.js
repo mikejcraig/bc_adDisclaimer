@@ -31,8 +31,9 @@ videojs.registerPlugin('ssGamePlayer', function() {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
       // var videojsId = document.querySelector('.video-js video');
-      var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
-      videojsId.play();
+//       var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
+//       videojsId.play();
+        player.play();
   });
 
   } else {

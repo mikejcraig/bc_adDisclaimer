@@ -21,7 +21,15 @@ videojs.registerPlugin('ssGamePlayer', function() {
 
   if (!demographicDataStorageValue || demographicDataStorageValue === true) {
       vidJs.classList.add('ss-game-play');
+  } else {
+  //  insertButton();
+    vidJs.classList.add('ss-game-play');
+  }
 
+  
+
+
+  if (!demographicDataStorageValue || demographicDataStorageValue === true) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
@@ -35,23 +43,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
 //       videojsId.play();
         player.play();
   });
-
-  } else {
-    insertButton();
-  }
-
-
-// if (demographicDataStorageValue) {
-//   document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
-//       event.preventDefault();
-//       event.stopPropagation();
-//       console.log(event);
-//       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
-//       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
-//       var videojsId = document.querySelector('.video-js video');
-//       videojsId.play();
 //   });
-// }
+}
   
   player.on('adend', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){

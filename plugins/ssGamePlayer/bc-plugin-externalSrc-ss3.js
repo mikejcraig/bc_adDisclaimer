@@ -19,7 +19,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
     vidJs.append(iDiv);
   }
 
-  if (demographicDataStorageValue) {
+  if (!demographicDataStorageValue || demographicDataStorageValue === true) {
     vidJs.classList.add('ss-game-play');
   } else {
     insertButton();

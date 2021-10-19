@@ -26,7 +26,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
-      console.log('this player' + player);
+      console.log(player);
 
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');

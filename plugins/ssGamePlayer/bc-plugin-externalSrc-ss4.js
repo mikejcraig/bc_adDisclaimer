@@ -31,6 +31,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
 
   if (!demographicDataStorageValue || demographicDataStorageValue === true) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
+        player.play();
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
@@ -41,7 +42,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
       // var videojsId = document.querySelector('.video-js video');
 //       var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
 //       videojsId.play();
-        player.play();
+//         player.play();
   });
 //   });
 }

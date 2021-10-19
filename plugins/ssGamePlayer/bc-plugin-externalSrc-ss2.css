@@ -31,6 +31,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 	opacity: .2;
 } 
 
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
@@ -69,7 +70,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
 	display: none;
 }
-
+}
 @media only screen 
   and (max-device-width: 767px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) { */

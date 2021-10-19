@@ -15,6 +15,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: none;
 }
 
+.bc-player-zPcr0MN8ga_default .vjs-spacer {
+	align-items: center;
+}
+
 .ss-game-play.video-js.bc-player-zPcr0MN8ga_default,
 .ss-big-play.sharp-js-demographic-trigger {
 	pointer-events: all;

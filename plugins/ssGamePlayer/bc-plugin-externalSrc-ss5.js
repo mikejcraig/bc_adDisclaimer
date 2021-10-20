@@ -14,12 +14,20 @@ videojs.registerPlugin('ssGamePlayer', function() {
               'url': '/games-play/ss-games/path-finder/',
               'counter': 1
           },
+          'pattern-match': {
+              'url': '/games-play/ss-games/pattern-match/',
+              'counter': 1
+          },
+          'pattern-match1': {
+              'url': '/games-play/ss-games/pattern-match/',
+              'counter': 1
+          },
           'ready-steady-count': {
               'url': 'https://braingames1.aarp.org/ready-steady-count.html',
               'counter': 1
           },         
           'ready-steady-count1': {
-              'url': 'https://braingames1.aarp.org/ready-steady-count.html',
+              'url': 'https://braingames1-s.aarp.org/ready-steady-count.html',
               'counter': 1
           }
         }

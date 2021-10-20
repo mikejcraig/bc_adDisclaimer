@@ -37,7 +37,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
   and (max-device-width: 1024px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) {
 */
-.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
+.vjs-ima3-not-playing-yet.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
 	    pointer-events: all;
 	    overflow: visible;
 }
@@ -54,7 +54,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 }*/
 
-.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
     color: #fff;
     display: block!important;
     background: #00f;
@@ -67,7 +67,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     height: 58px;
 }
 
-.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
+.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
 	display: none;
 }
 }
@@ -75,7 +75,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
   and (max-device-width: 767px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) { */
 
-.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
+.vjs-ima3-not-playing-yet.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
 	    pointer-events: all;
 	    overflow: visible;
 }
@@ -92,7 +92,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 }*/
 
-.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
 	color: #fff;
     display: block!important;
     background: purple;
@@ -102,9 +102,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     left: 15%;
     pointer-events: all;
     margin-top: 106px;
+    border-radius: 0;
 }
 
-.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
+.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
 	display: none;
 }
 

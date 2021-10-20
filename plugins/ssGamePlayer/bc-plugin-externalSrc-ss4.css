@@ -68,7 +68,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 */
 
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
-    color: #fff;
+	color: #fff;
     display: block!important;
     background: #00f;
     width: 172px;
@@ -78,7 +78,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
     border-radius: 0;
     height: 50px;
-    bottom: -80px;
+    bottom: -110px;
 }
 }
 
@@ -89,7 +89,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 */
 
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
-	color: #fff;
+    color: #fff;
     display: block!important;
     background: #00f;
     width: 172px;
@@ -119,7 +119,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
     border-radius: 0;
     height: 50px;
-    bottom: -80px;    
+    bottom: -80px; 
 }
 }
 
@@ -128,16 +128,16 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 /*  and (-webkit-min-device-pixel-ratio: 1) { */
 
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
-	color: #fff;
+    color: #fff;
     display: block!important;
     background: orange;
-    width: 172px;
+    width: 150px;
     height: 82px;
     top: auto;
     z-index: 99;
-    left: 11%;
+    left: 17%;
     pointer-events: all;
     border-radius: 0;
-    bottom: -80px;
+    bottom: -104px;
 }
 }

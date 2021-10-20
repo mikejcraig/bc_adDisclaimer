@@ -100,4 +100,11 @@ videojs.registerPlugin('ssGamePlayer', function() {
      window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
+
+  player.on('onplay', function(evt) {
+   // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
+     // window.location.href = '/games-play/ss-games/path-finder/';
+     console.log('onplay' + evt);
+   // }
+  });
 });

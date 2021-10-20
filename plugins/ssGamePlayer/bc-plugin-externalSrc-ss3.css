@@ -6,6 +6,10 @@
     background-image: url("https://cdn-pi.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/rsc-ani-thumbnail-A.imgcache.rev2626886b990c0e0f7a3896edbe117ebb.gif") !important;
 }
 
+.pattern-match .vjs-poster, .pattern-match1 .vjs-poster {
+    background-image: url("https://cdn-pi.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/pattern-match-ani-thumbnail-A.imgcache.reva967d9eb485c3209302b9396ff861c2d.gif") !important;
+}
+
 
 button.vjs-big-play-button {
     display: none !important;

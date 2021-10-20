@@ -35,13 +35,12 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
-  document.addEventListener('DOMContentLoaded', fn);
+  // document.addEventListener('DOMContentLoaded', fn);
   var fn = function() {
     bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
     // bigPlayPosition.style.top = playButtonPosition.y + 'px';
   }
-
-
+  fn();
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

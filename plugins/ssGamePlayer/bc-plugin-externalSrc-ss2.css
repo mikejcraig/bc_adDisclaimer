@@ -31,13 +31,16 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 	opacity: .2;
 } 
 
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default .vjs-has-started {
+	overflow: hidden;
+} 
 
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) {
 */
-.vjs-ima3-not-playing-yet.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
 	    pointer-events: all;
 	    overflow: visible;
 }
@@ -54,7 +57,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 }*/
 
-.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
     color: #fff;
     display: block!important;
     background: #00f;
@@ -67,7 +70,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     height: 58px;
 }
 
-.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
 	display: none;
 }
 }
@@ -75,7 +78,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
   and (max-device-width: 767px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) { */
 
-.vjs-ima3-not-playing-yet.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
 	    pointer-events: all;
 	    overflow: visible;
 }
@@ -92,7 +95,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 }*/
 
-.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
 	color: #fff;
     display: block!important;
     background: purple;
@@ -105,7 +108,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     border-radius: 0;
 }
 
-.vjs-ima3-not-playing-yet.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
 	display: none;
 }
 

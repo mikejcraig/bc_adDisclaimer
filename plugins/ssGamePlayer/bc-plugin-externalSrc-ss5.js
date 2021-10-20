@@ -4,7 +4,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
   var demographicDataStorage = localStorage.getItem('DemographicData');
   // var demographicDataStorageValue = (demographicDataStorage) ? JSON.parse(demographicDataStorage) : false;
   var demographicDataStorageValue = (demographicDataStorage) ? false : false;
-
+  var posterImage = (document.location.host.match('cms')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
   var gamesList = {
           'path-finder': {
               'url': '/games-play/ss-games/path-finder/',

@@ -35,12 +35,17 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
+  if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length = 1) {
+    vidJs.classList.add('ss-game-play-1-button');
+  }
   // document.addEventListener('DOMContentLoaded', fn);
+  // fn();
   var fn = function() {
     // bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
     // bigPlayPosition.style.top = playButtonPosition.y + 'px';
   }
-  //fn();
+
+
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

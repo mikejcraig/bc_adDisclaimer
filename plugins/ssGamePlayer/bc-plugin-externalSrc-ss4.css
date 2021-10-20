@@ -52,14 +52,14 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 	display: none;
 }
 
-.altstyle {
+/*.altstyle {
     height: 50px;
     width: 172px;
     background: orange;
     position: absolute;
     z-index: 99;
     bottom: -80px;
-}
+}*/
 
 @media only screen 
   and (min-device-width: 768px) 
@@ -79,6 +79,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     border-radius: 0;
     height: 50px;
     bottom: -110px;
+}
+
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+	left: 45%;
 }
 }
 
@@ -101,6 +105,9 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     height: 50px;
     bottom: -80px;
 }
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+	left: 45%;
+}
 }
 
 @media only screen 
@@ -121,6 +128,9 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     height: 50px;
     bottom: -80px; 
 }
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+	left: 45%;
+}
 }
 
 @media only screen 
@@ -139,5 +149,8 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
     border-radius: 0;
     bottom: -104px;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+	left: 45%;
 }
 }

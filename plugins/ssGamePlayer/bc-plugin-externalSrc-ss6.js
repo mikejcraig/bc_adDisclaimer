@@ -35,7 +35,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
-  if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length = 1) {
+  if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {
     vidJs.classList.add('ss-game-play-1-button');
   }
   // document.addEventListener('DOMContentLoaded', fn);

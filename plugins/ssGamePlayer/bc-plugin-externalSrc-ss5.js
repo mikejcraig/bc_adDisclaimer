@@ -35,8 +35,11 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
-  bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
-  bigPlayPosition.style.top = (playButtonPosition.y) + 'px';
+  document.addEventListener('DOMContentLoaded', fn);
+  fn function() {
+    bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
+    bigPlayPosition.style.top = playButtonPosition.y + 'px';
+  }
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

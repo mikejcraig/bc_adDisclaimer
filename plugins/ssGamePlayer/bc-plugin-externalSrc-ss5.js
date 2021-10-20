@@ -24,7 +24,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           }
         }
 
-  vidJs.classList.add(document.location.pathname.split('/')[2]);
+  vidJs.classList.add(posterImage);
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

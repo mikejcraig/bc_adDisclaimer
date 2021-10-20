@@ -40,7 +40,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
     // bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
     // bigPlayPosition.style.top = playButtonPosition.y + 'px';
   }
-  fn();
+  //fn();
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

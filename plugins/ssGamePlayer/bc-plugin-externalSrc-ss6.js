@@ -37,7 +37,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
   vidJs.classList.add(posterImage);
   // document.addEventListener('DOMContentLoaded', fn);
   var fn = function() {
-    bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
+    // bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
     // bigPlayPosition.style.top = playButtonPosition.y + 'px';
   }
   fn();

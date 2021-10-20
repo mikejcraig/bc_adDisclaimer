@@ -5,6 +5,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
   // var demographicDataStorageValue = (demographicDataStorage) ? JSON.parse(demographicDataStorage) : false;
   var demographicDataStorageValue = (demographicDataStorage) ? false : false;
   var posterImage = (document.location.host.match('cms')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
+  var playButtonPosition = window.document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].getBoundingClientRect();
+  var bigPlayPosition = window.document.querySelectorAll('.vjs-big-play-button')[0];
   var gamesList = {
           'path-finder': {
               'url': '/games-play/ss-games/path-finder/',
@@ -33,6 +35,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
+  bigPlayPosition.style.left = (playButtonPosition.x + 30) + 'px';
+  bigPlayPosition.style.top = playButtonPosition.y + 'px';
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');

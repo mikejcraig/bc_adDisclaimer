@@ -46,13 +46,29 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 
 @media only screen 
   and (min-device-width: 768px) 
+  and (max-device-width: 899px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) {
+*/
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    color: #fff;
+    display: block!important;
+    background: #00f;
+    width: 175px;
+    top: 128%;
+    z-index: 99;
+    left: 26%;
+    pointer-events: all;
+    border-radius: 0;
+    height: 58px;
+}
+}
+
+@media only screen 
+  and (min-device-width: 900px) 
   and (max-device-width: 1024px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) {
 */
-.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
-	    pointer-events: all;
-	    overflow: visible;
-}
 
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
     color: #fff;
@@ -73,15 +89,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
   and (max-device-width: 767px) {
 /*  and (-webkit-min-device-pixel-ratio: 1) { */
 
-.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
-	    pointer-events: all;
-	    overflow: visible;
-}
-
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
 	color: #fff;
     display: block!important;
-    background: orange;
+    background: purple;
     width: 171px;
     top: 51%;
     z-index: 99;
@@ -99,11 +110,11 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 .ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
 	color: #fff;
     display: block!important;
-    background: purple;
+    background: orange;
     width: 171px;
-    top: 51%;
+    top: 74%;
     z-index: 99;
-    left: 15%;
+    left: 27%;
     pointer-events: all;
     margin-top: 106px;
     border-radius: 0;

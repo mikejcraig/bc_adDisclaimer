@@ -101,10 +101,13 @@ videojs.registerPlugin('ssGamePlayer', function() {
    // }
   });
 
-  player.on('onplay', function(evt) {
-   // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
-     // window.location.href = '/games-play/ss-games/path-finder/';
-     console.log('onplay' + evt);
-   // }
-  });
+player.on('timeupdate', timeupdateHandler);
+
+// Handle the event then remove JUST this event listener on timeupdate
+function timeupdateHandler(evt) {
+  // ...
+  // myPlayer.off('timeupdate', timeupdateHandler);
+  console.log('timeupdate ' + evt);
+  console.log(evt);
+}
 });

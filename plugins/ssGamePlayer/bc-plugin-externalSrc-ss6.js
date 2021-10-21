@@ -101,6 +101,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
    // }
   });
 
+player.on('timeupdate', timeupdateHandler);  
+  
 // Handle the event then remove JUST this event listener on timeupdate
 function timeupdateHandler(evt) {
   // ...

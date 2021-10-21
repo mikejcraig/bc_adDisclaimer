@@ -97,7 +97,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
   player.on('adend', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
-   //  window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+    window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
 
@@ -107,15 +107,15 @@ player.on('timeupdate', timeupdateHandler);
 function timeupdateHandler(evt) {
   // ...
   // myPlayer.off('timeupdate', timeupdateHandler);
-  console.log('timeupdate ' + evt);
-  console.log(player.currentTime());
+//  console.log('timeupdate ' + evt);
+//  console.log(player.currentTime());
       if (player.currentTime() > 0.5) {
   //   player.pause();
   //      window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
       // we only want to do this once, so unload the listener
-      player.off('timeupdate', timeupdateHandler);
+//      player.off('timeupdate', timeupdateHandler);
       // hide the player controls
-      player.addClass('hide-controls');
+ //     player.addClass('hide-controls');
 //      window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
 
     }

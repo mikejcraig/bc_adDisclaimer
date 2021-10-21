@@ -107,14 +107,16 @@ player.on('timeupdate', timeupdateHandler);
 function timeupdateHandler(evt) {
   // ...
   // myPlayer.off('timeupdate', timeupdateHandler);
-  // console.log('timeupdate ' + evt);
+  console.log('timeupdate ' + evt);
   console.log(player.currentTime());
-      if (player.currentTime() > 10) {
+      if (player.currentTime() > 0.5) {
       player.pause();
       // we only want to do this once, so unload the listener
       player.off('timeupdate', timeupdateHandler);
       // hide the player controls
       player.addClass('hide-controls');
+     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+
     }
 }
 });

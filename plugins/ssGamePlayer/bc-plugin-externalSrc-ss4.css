@@ -135,6 +135,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 .ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
 	left: 45%;
 }
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-progress-control {
+    height: .2em;
+    top: auto;
+}
 }
 
 @media only screen 
@@ -156,5 +160,9 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 }
 .ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
 	left: 45%;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-progress-control {
+    height: .2em;
+    top: auto;
 }
 }

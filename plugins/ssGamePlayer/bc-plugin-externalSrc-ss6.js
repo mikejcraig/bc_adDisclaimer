@@ -101,13 +101,18 @@ videojs.registerPlugin('ssGamePlayer', function() {
    // }
   });
 
-player.on('timeupdate', timeupdateHandler);
-
 // Handle the event then remove JUST this event listener on timeupdate
 function timeupdateHandler(evt) {
   // ...
   // myPlayer.off('timeupdate', timeupdateHandler);
-  console.log('timeupdate ' + evt);
-  console.log(evt);
+  // console.log('timeupdate ' + evt);
+  console.log(currentTime());
+      if (player.currentTime() > 10) {
+      player.pause();
+      // we only want to do this once, so unload the listener
+      player.off('timeupdate', onTimeupdateHandler);
+      // hide the player controls
+      player.addClass('hide-controls');
+    }
 }
 });

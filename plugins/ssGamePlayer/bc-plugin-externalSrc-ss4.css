@@ -61,6 +61,10 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     bottom: -80px;
 }*/
 
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    background-color: transparent;
+}
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 899px) {

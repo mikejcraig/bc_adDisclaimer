@@ -110,12 +110,13 @@ function timeupdateHandler(evt) {
   console.log('timeupdate ' + evt);
   console.log(player.currentTime());
       if (player.currentTime() > 0.5) {
-  //    player.pause();
+     player.pause();
+        window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
       // we only want to do this once, so unload the listener
       player.off('timeupdate', timeupdateHandler);
       // hide the player controls
       player.addClass('hide-controls');
-     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+//      window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
 
     }
 }

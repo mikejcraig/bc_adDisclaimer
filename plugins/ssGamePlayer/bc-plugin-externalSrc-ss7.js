@@ -1,4 +1,5 @@
 videojs.registerPlugin('ssGamePlayer', function() {
+  console.log('ssGamePlayer init');
   var player = this;
   var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
   var demographicDataStorage = localStorage.getItem('DemographicData');

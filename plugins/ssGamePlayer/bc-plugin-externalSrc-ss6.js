@@ -108,7 +108,7 @@ function timeupdateHandler(evt) {
   // ...
   // myPlayer.off('timeupdate', timeupdateHandler);
   // console.log('timeupdate ' + evt);
-  console.log(currentTime());
+  console.log(player.currentTime());
       if (player.currentTime() > 10) {
       player.pause();
       // we only want to do this once, so unload the listener

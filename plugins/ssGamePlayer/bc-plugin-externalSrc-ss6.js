@@ -112,7 +112,7 @@ function timeupdateHandler(evt) {
       if (player.currentTime() > 10) {
       player.pause();
       // we only want to do this once, so unload the listener
-      player.off('timeupdate', onTimeupdateHandler);
+      player.off('timeupdate', timeupdateHandler);
       // hide the player controls
       player.addClass('hide-controls');
     }

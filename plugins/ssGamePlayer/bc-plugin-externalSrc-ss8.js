@@ -103,10 +103,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
      var iDiv2 = window.document.createElement('a');
         iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
-
-    emptyBC.append(iDiv2);
-   // insertButton();
-     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+    emptyBC.append(iDiv2);     
+window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
 

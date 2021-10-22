@@ -102,9 +102,9 @@ videojs.registerPlugin('ssGamePlayer', function() {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
         emptyBC.classList.add('pattern-match1');
-     var iDiv = window.document.createElement('a');
-        iDiv.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
-    emptyBC.append(iDiv);
+     var iDiv2 = window.document.createElement('div');
+        iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
+    emptyBC.append(iDiv2);
     insertButton();
   //   window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }

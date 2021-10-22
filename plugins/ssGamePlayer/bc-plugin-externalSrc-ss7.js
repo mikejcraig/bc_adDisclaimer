@@ -99,9 +99,14 @@ videojs.registerPlugin('ssGamePlayer', function() {
   player.on('adend', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
-    player.dispose();
-//     player.reset();
-//     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+     player.dispose();
+     var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
+        emptyBC.classList.add('pattern-match1');
+     var iDiv = window.document.createElement('a');
+        iDiv.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
+    emptyBC.append(iDiv);
+    insertButton();
+  //   window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
 

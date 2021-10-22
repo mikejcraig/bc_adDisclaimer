@@ -101,7 +101,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
      // window.location.href = '/games-play/ss-games/path-finder/';
     player.dispose();
 //     player.reset();
-     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+//     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
 

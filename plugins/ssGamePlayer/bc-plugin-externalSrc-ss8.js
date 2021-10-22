@@ -99,7 +99,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
      // window.location.href = '/games-play/ss-games/path-finder/';
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
-        emptyBC.classList.add(gamesList[document.location.pathname.split('/')[2]]);
+        emptyBC.classList.add('pattern-match1');
      var iDiv2 = window.document.createElement('a');
         iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;

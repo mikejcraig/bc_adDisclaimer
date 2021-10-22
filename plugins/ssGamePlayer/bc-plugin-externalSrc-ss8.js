@@ -107,7 +107,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
        setTimeout(function(){
     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
-  }, 250);
+  }, 500);
    // }
   });
 

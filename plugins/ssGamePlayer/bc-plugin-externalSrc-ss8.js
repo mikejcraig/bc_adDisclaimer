@@ -104,7 +104,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
         iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
     emptyBC.append(iDiv2);     
-window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+//window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
 

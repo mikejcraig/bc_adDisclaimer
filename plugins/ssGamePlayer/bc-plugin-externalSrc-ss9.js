@@ -45,7 +45,20 @@ videojs.registerPlugin('ssGamePlayer', function() {
     // bigPlayPosition.style.top = playButtonPosition.y + 'px';
   }
 
-
+  var getScreenWidth = function() {
+        windowWidthScrn = window.document.documentElement.clientWidth;
+    if (windowWidthScrn < 768) {
+        //Mobile Viewport
+        scrn = 2;
+    } else if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
+        //Tablet Viewport
+        scrn = 1;
+    } else {
+        //Desktop Viewport
+        scrn = 0;
+    }
+    return scrn;
+  };
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
@@ -112,20 +125,5 @@ if(getScreenWidth() == 0) {
      // window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
    // }
   });
-
-      var getScreenWidth = function() {
-            windowWidthScrn = document.documentElement.clientWidth;
-        if (windowWidthScrn < 768) {
-            //Mobile Viewport
-            scrn = 2;
-        } else if (windowWidthScrn > 767 && windowWidthScrn < 1025) {
-            //Tablet Viewport
-            scrn = 1;
-        } else {
-            //Desktop Viewport
-            scrn = 0;
-        }
-        return scrn;
-    };
 
 });

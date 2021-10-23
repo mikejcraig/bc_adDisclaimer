@@ -75,8 +75,9 @@ videojs.registerPlugin('ssGamePlayer', function() {
 
   if (demographicDataStorageValue) {
       vidJs.classList.add('ss-game-play');
-if(getScreenWidth() == 0) {
+
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
+        if(getScreenWidth() == 0) {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
@@ -88,8 +89,8 @@ if(getScreenWidth() == 0) {
       // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
       // videojsId.play();
       player.play();
+    }
   });
-}
   } else {
     insertButton();
   }

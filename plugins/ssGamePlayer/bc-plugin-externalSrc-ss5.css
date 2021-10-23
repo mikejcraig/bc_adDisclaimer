@@ -1,0 +1,185 @@
+.path-finder .vjs-poster, .path-finder1 .vjs-poster {
+    background-image: url("https://cdn.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/pathfinder-ani-thumbnail-A.imgcache.rev10c2b6efece82752f9ea2213cc4f7730.gif") !important;
+}
+
+.ready-steady-count .vjs-poster, .ready-steady-count1 .vjs-poster {
+    background-image: url("https://cdn-pi.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/rsc-ani-thumbnail-A.imgcache.rev2626886b990c0e0f7a3896edbe117ebb.gif") !important;
+}
+
+.pattern-match .vjs-poster, .pattern-match1 .vjs-poster {
+    background-image: url("https://cdn-pi.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/pattern-match-ani-thumbnail-A.imgcache.reva967d9eb485c3209302b9396ff861c2d.gif") !important;
+}
+
+button.vjs-big-play-button {
+    display: none !important;
+}
+
+a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disabled.sharp-c-button-bg-pebblegrey {
+    opacity: .5;
+}
+
+.video-js.bc-player-zPcr0MN8ga_default {
+    margin-bottom: 30px;
+    pointer-events: none;
+}
+
+.bc-player-zPcr0MN8ga_default .vjs-spacer {
+    align-items: center;
+}
+
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default,
+.ss-big-play.sharp-js-demographic-trigger {
+    pointer-events: all;
+} 
+
+.ss-big-play.sharp-js-demographic-trigger {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .2;
+}
+
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default.vjs-has-started {
+    overflow: hidden;
+} 
+
+.ss-game-play.video-js.bc-player-zPcr0MN8ga_default {
+        pointer-events: all;
+        overflow: visible;
+}
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button .vjs-icon-placeholder::before {
+    display: none;
+}
+
+/*.altstyle {
+    height: 50px;
+    width: 172px;
+    background: orange;
+    position: absolute;
+    z-index: 99;
+    bottom: -80px;
+}*/
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    background-color: transparent;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 899px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) {
+*/
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    color: #fff;
+    display: block!important;
+/*    background: #00f;*/
+    width: 172px;
+    top: auto;
+    z-index: 99;
+    left: 26%;
+    pointer-events: all;
+    border-radius: 0;
+    height: 50px;
+    bottom: -110px;
+}
+
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+    left: 45%;
+}
+}
+
+@media only screen 
+  and (min-device-width: 900px) 
+  and (max-device-width: 1024px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) {
+*/
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    color: #fff;
+    display: block!important;
+/*    background: #00f;*/
+    width: 172px;
+    top: auto;
+    z-index: 99;
+    left: 33%;
+    pointer-events: all;
+    border-radius: 0;
+    height: 50px;
+    bottom: -80px;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+    left: 45%;
+}
+}
+
+@media only screen 
+  and (min-device-width: 600px) 
+  and (max-device-width: 767px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) { */
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    color: #fff;
+    display: block!important;
+/*    background: purple;*/
+    width: 172px;
+    top: auto;
+    z-index: 99;
+    left: 27%;
+    pointer-events: all;
+    border-radius: 0;
+    height: 50px;
+    bottom: -80px; 
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+    left: 45%;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-progress-control {
+    height: .2em;
+    top: auto;
+}
+}
+
+@media only screen 
+  and (max-device-width: 599px) {
+/*  and (-webkit-min-device-pixel-ratio: 1) { */
+
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-big-play-button {
+    color: #fff;
+    display: block!important;
+/*    background: orange;*/
+    width: 150px;
+    height: 82px;
+    top: auto;
+    z-index: 99;
+    left: 17%;
+    pointer-events: all;
+    border-radius: 0;
+    bottom: -104px;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default.ss-game-play-1-button .vjs-big-play-button {
+    left: 45%;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default .vjs-progress-control {
+    height: .2em;
+    top: auto;
+}
+}
+
+@media only screen and (max-width:1024px) {
+
+.ss-game-play.bc-player-zPcr0MN8ga_default.vjs-has-started .vjs-control-bar {
+    display: none !important;
+}
+.ss-game-play.bc-player-zPcr0MN8ga_default.vjs-has-started .vjs-control-bar {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: none !important;
+}
+.vjs-ima3-ad-container,.vjs-ima3-click-tracker {
+    pointer-events: all !important;
+}
+}
+

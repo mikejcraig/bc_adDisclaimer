@@ -63,7 +63,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
   if (demographicDataStorageValue) {
       vidJs.classList.add('ss-game-play');
 
-      document.querySelectorAll('a.sharp-c-buttonX')[0].addEventListener('click', (event) => {
+      document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);

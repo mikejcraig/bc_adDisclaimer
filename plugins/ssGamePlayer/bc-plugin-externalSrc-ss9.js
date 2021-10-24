@@ -116,7 +116,7 @@ if(deviceType == 0) {
      // window.location.href = '/games-play/ss-games/path-finder/';
     if (deviceType == 0) {
           window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
-    else {
+    } else {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
         emptyBC.classList.add(document.location.pathname.split('/')[2]);

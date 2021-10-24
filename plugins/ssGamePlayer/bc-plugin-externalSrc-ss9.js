@@ -78,7 +78,7 @@ console.log(deviceType);
 
   if (demographicDataStorageValue) {
       vidJs.classList.add('ss-game-play');
-
+if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();
@@ -92,6 +92,7 @@ console.log(deviceType);
       // videojsId.play();
       player.play();
   });
+}
 
   } else {
     insertButton();

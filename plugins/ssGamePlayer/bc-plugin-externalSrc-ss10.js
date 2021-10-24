@@ -111,12 +111,13 @@ if(deviceType == 0) {
 //   });
 // }
  
-  player.on('adstarted', function(evt) {
+  player.on('ads-request', function(evt) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
   });
+
   
-  player.on('adend', function(evt) {
+  player.on('ads-ad-ended', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
     if (deviceType == 0) {

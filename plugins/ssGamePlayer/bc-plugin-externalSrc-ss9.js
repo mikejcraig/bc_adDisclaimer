@@ -122,9 +122,10 @@ if(deviceType == 0) {
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
     emptyBC.append(iDiv2);     
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+    var timeoutTime = (deviceType == 0) ? 0 : 250;
        setTimeout(function(){
     window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
-  }, 500);
+  }, timeoutTime);
    // }
   });
 

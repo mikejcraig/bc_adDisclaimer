@@ -113,12 +113,12 @@ if(deviceType == 0) {
  
   player.on('adserror', function(evt) {
     console.log('adserror ' + evt);
-      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
-      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
     
         if (deviceType == 0) {
          window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     } else {
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
         emptyBC.classList.add(document.location.pathname.split('/')[2]);
@@ -132,7 +132,7 @@ if(deviceType == 0) {
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     var timeoutTime = 250;
        setTimeout(function(){
- //  window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+   window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
   }, timeoutTime);
     }   
   });

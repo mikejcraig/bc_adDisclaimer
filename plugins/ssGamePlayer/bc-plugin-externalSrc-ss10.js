@@ -111,7 +111,8 @@ if(deviceType == 0) {
 //   });
 // }
  
-  player.on('ads-request', function(evt) {
+  player.on('adserror', function(evt) {
+    console.log('adserror ' + adserror);
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
   });

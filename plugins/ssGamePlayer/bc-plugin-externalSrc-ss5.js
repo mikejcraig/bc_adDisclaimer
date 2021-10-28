@@ -35,6 +35,13 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
 
   vidJs.classList.add(posterImage);
+  document.addEventListener('DOMContentLoaded', fn);
+  fn function() {
+    bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
+    // bigPlayPosition.style.top = playButtonPosition.y + 'px';
+  }
+
+
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
@@ -51,11 +58,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
 
   if (!demographicDataStorageValue || demographicDataStorageValue === true) {
       vidJs.classList.add('ss-game-play');
-  document.addEventListener('DOMContentLoaded', fn);
-  var fn = function() {
-    bigPlayPosition.style.left = (playButtonPosition.x) + 'px';
-    bigPlayPosition.style.top = playButtonPosition.y + 'px';
-  }
+
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
       event.preventDefault();
       event.stopPropagation();

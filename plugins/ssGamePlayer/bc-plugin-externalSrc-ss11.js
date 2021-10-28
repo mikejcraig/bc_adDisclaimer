@@ -122,7 +122,10 @@ if(deviceType == 0) {
      var iDiv2 = window.document.createElement('a');
         iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
-    emptyBC.append(iDiv2);     
+    emptyBC.append(iDiv2);
+    
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');          
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     var timeoutTime = 250;
        setTimeout(function(){
@@ -133,8 +136,10 @@ if(deviceType == 0) {
 
   player.on('ads-request', function(evt) {
     console.log('ads-request ' + evt);
+    if (deviceType == 0) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
+    }
   });
   
   player.on('ads-ad-ended', function(evt) {
@@ -149,7 +154,10 @@ if(deviceType == 0) {
      var iDiv2 = window.document.createElement('a');
         iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
-    emptyBC.append(iDiv2);     
+    emptyBC.append(iDiv2);
+
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');     
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     var timeoutTime = 250;
        setTimeout(function(){

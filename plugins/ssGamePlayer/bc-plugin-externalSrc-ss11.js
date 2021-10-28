@@ -113,6 +113,22 @@ if(deviceType == 0) {
  
   player.on('adserror', function(evt) {
     console.log('adserror ' + evt);
+        if (deviceType == 0) {
+         window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+    } else {
+     player.dispose();
+     var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
+        emptyBC.classList.add(document.location.pathname.split('/')[2]);
+     var iDiv2 = window.document.createElement('a');
+        iDiv2.className = 'vjs-poster bc-player-zPcr0MN8ga_default video-js';
+        iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
+    emptyBC.append(iDiv2);     
+//window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+    var timeoutTime = 250;
+       setTimeout(function(){
+   window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+  }, timeoutTime);
+    }   
   });
 
   player.on('ads-request', function(evt) {

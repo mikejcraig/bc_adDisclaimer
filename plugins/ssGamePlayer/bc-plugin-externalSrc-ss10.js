@@ -112,7 +112,7 @@ if(deviceType == 0) {
 // }
  
   player.on('adserror', function(evt) {
-    console.log('adserror ' + adserror);
+    console.log('adserror ' + evt);
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
   });

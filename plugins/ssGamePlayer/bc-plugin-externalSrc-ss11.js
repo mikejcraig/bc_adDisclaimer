@@ -129,7 +129,7 @@ if(deviceType == 0) {
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     var timeoutTime = 250;
        setTimeout(function(){
-   window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+ //  window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
   }, timeoutTime);
     }   
   });

@@ -43,7 +43,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           'split-words': {
               'url': 'http://braingames1.aarp.org/splitwords.html',
               'counter': 1
-          }          
+          },          
           'hurray-change': {
               'url': 'https://braingames1.aarp.org/Hurray_For_Change.html',
               'counter': 1

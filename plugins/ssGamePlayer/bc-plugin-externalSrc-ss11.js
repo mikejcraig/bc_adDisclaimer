@@ -113,6 +113,9 @@ if(deviceType == 0) {
  
   player.on('adserror', function(evt) {
     console.log('adserror ' + evt);
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
+    
         if (deviceType == 0) {
          window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     } else {

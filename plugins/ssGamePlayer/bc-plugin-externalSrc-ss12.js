@@ -51,7 +51,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           'heraldry': {
               'url': 'https://braingames1.aarp.org/heraldry.html',
               'counter': 1
-          }    
+          },    
           'secret-files': {
               'url': 'https://braingames1.aarp.org/secret_files.html',
               'counter': 1
@@ -85,7 +85,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           'wordsmith': {
               'url': '/games-play/mbs/wordsmith/',
               'counter': 1
-          }          
+          },          
           'memory-maze': {
               'url': '/games-play/mbs/memory-maze/',
               'counter': 1
@@ -93,7 +93,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           'slingshot': {
               'url': '/games-play/mbs/slingshot/',
               'counter': 1
-          }    
+          },    
           'think-memory': {
               'url': '/games-play/mbs/think-memory/',
               'counter': 1

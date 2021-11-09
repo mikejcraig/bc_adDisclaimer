@@ -253,9 +253,10 @@ if(deviceType == 0) {
       event.stopPropagation();
       console.log('event' + event);
       console.log('this player' + player);
-
+      if (document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link').length > 0 ) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
+      }
       // var videojsId = document.querySelector('.video-js video');
       // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
       // videojsId.play();

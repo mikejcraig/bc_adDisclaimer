@@ -172,9 +172,13 @@ button.vjs-big-play-button {
     display: none !important;
 }
 
-a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disabled.sharp-c-button-bg-pebblegrey, a.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item {
+a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disabled.sharp-c-button-bg-pebblegrey {
     opacity: .5;
 }
+
+/*, a.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item.sharp-c-button--disabled {
+    opacity: .5;
+}*/
 
 .video-js.bc-player-zPcr0MN8ga_default {
     margin-bottom: 30px;

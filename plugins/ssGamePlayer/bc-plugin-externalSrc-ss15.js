@@ -327,12 +327,15 @@ if(deviceType == 0) {
         iDiv2.href=gamesList[document.location.pathname.split('/')[2]].url;
     emptyBC.append(iDiv2);
 
-      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
-      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');     
+ //     document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
+ //     document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');     
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     var timeoutTime = 50;
        setTimeout(function(){
    window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
+         
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
+      document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');  
   }, timeoutTime);
     }    
    // }

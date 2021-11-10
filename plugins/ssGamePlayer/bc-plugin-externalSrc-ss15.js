@@ -307,10 +307,10 @@ if(deviceType == 0) {
 
   player.on('ads-request', function(evt) {
     console.log('ads-request ' + evt);
-    if (deviceType == 0) {
+  //  if (deviceType == 0) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
-    }
+  //  }
   });
   
   player.on('ads-ad-ended', function(evt) {

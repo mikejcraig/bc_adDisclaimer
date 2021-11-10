@@ -307,6 +307,9 @@ if(deviceType == 0) {
 
   player.on('ads-request', function(evt) {
     console.log('ads-request ' + evt);
+        const playerControlBarContainer = document.querySelectorAll('.bc-player-zPcr0MN8ga_default .vjs-spacer')[1];
+        playerControlBarContainer.innerText = 'Advertisement';
+
   //  if (deviceType == 0) {
     if (document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link').length > 0) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');

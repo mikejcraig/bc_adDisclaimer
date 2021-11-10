@@ -17,7 +17,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
               'counter': 1
           },
           'pattern-match': {
-              'url': '/games-play/ss-games/pattern-match/,
+              'url': '/games-play/ss-games/pattern-match/',
               'counter': 1
           },
           'pattern-match1': {

@@ -314,7 +314,7 @@ if(deviceType == 0) {
     }
 
         if (document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item').length > 0) {
-      document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item')[0].classList.add('sharp-c-button-bg-pebblegrey');
+      // document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item')[0].classList.add('sharp-c-button--disabled');
     }
   //  }
@@ -343,7 +343,10 @@ if(deviceType == 0) {
     if (document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link').length > 0) {      
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled'); 
-      } 
+      }
+    if (document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item').length > 0) {
+      document.querySelectorAll('.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item')[0].classList.remove('sharp-c-button--disabled');
+    } 
   }, timeoutTime);
     }    
    // }

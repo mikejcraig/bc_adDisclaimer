@@ -172,7 +172,7 @@ button.vjs-big-play-button {
     display: none !important;
 }
 
-a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disabled.sharp-c-button-bg-pebblegrey {
+a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disabled.sharp-c-button-bg-pebblegrey, a.sharp-c-lightbox__button--transparent.sharp-js-lightbox-videoPlayer.sharp-c-lightbox-videoPlayer_item {
     opacity: .5;
 }
 

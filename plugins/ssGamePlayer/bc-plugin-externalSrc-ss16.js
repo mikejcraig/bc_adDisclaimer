@@ -4,7 +4,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
   var demographicDataStorage = localStorage.getItem('DemographicData');
   var demographicDataStorageValue = (demographicDataStorage && JSON.parse(demographicDataStorage) == false) ? false : true;
   // var demographicDataStorageValue = (demographicDataStorage) ? false : false;
-  var posterImage = (document.location.host.match('cms')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
+  var posterImage = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
 //  var playButtonPosition = window.document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].getBoundingClientRect();
   var bigPlayPosition = window.document.querySelectorAll('.vjs-big-play-button')[0];
    var gamesList = {

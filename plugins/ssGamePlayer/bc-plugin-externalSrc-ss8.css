@@ -345,3 +345,11 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
 }
 }
 
+@media only screen 
+  and (min-device-width: 767px) 
+  and (max-device-width: 1024px) {
+
+.bc-player-zPcr0MN8ga_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible), .bc-player-zPcr0MN8ga_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible), .bc-player-zPcr0MN8ga_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible), .bc-player-zPcr0MN8ga_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible), .bc-player-zPcr0MN8ga_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar, .bc-player-zPcr0MN8ga_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible) {
+    transform: translateY(0em);
+}
+}

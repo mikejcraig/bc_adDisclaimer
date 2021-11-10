@@ -330,7 +330,7 @@ if(deviceType == 0) {
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');     
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
-    var timeoutTime = 250;
+    var timeoutTime = 100;
        setTimeout(function(){
    window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
   }, timeoutTime);

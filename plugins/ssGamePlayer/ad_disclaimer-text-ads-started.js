@@ -1,5 +1,5 @@
 videojs.registerPlugin('adDisclaimer', function() {
-  // this.on('loadedmetadata', () => {
+  this.on("loadedmetadata",function() {
     // const playerId = this.id();
     const playerControlBarContainer = document.querySelectorAll('.vjs-spacer')[1];
 
@@ -24,5 +24,5 @@ videojs.registerPlugin('adDisclaimer', function() {
     //   };
     //   hideAdDisclaimer();
     // });
-  // });
+  });
 });

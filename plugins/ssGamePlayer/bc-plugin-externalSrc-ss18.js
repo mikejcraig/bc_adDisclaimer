@@ -245,7 +245,7 @@ console.log(deviceType);
     vidJs.append(iDiv);
   }
 
-  if (demographicDataStorageValue || AARP?.StayingSharp?.utils?.isUserUHC() == false) {
+  if (demographicDataStorageValue && AARP?.StayingSharp?.utils?.isUserUHC() == false || AARP?.StayingSharp?.utils?.isUserUHC() == false) {
       vidJs.classList.add('ss-game-play');
 if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {

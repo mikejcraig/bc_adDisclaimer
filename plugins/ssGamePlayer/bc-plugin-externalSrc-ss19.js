@@ -202,6 +202,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
               'counter': 1
           }
         }
+  var gameLink = (gamesList[document.location.pathname.split('/')[2]].url) ? gamesList[document.location.pathname.split('/')[2]].url : '#';
         
   vidJs.classList.add(posterImage);
   if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer').length > 0 && document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {
@@ -240,7 +241,7 @@ console.log(deviceType);
         iDiv.setAttribute('data-functionality', 'link');
         iDiv.setAttribute('data-formelementid', 'staying-sharp-game-landing-page-btn-clk-play-path-finder');
         iDiv.className = 'ss-big-play sharp-js-demographic-trigger';
-        iDiv.href=gamesList[document.location.pathname.split('/')[2]].url;
+        iDiv.href=gameLink;
         iDiv.target="_self";
     vidJs.append(iDiv);
   }

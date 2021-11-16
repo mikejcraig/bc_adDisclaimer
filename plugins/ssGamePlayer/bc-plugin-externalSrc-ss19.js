@@ -248,7 +248,7 @@ console.log(deviceType);
 
   insertButton();
 
-  if (demographicDataStorageValue) {
+  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {

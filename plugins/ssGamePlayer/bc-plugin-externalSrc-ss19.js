@@ -202,7 +202,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
               'counter': 1
           }
         }
-  var gameLink = (gamesList[document.location.pathname.split('/')[2]].url) ? gamesList[document.location.pathname.split('/')[2]].url : '#';
+  var gameLink = (gamesList[document.location.pathname.split('/')[2]]) ? gamesList[document.location.pathname.split('/')[2]].url : '#';
         
   vidJs.classList.add(posterImage);
   if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer').length > 0 && document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {

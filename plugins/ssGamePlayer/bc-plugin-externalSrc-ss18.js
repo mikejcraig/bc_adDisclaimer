@@ -3,6 +3,8 @@ videojs.registerPlugin('ssGamePlayer', function() {
   var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
   var demographicDataStorage = localStorage.getItem('DemographicData');
   var demographicDataStorageValue = (demographicDataStorage && JSON.parse(demographicDataStorage) == false) ? false : true;
+  var userUHC = (typeof(AARP.StayingSharp.utils) == 'object') ? AARP.StayingSharp.utils.isUserUHC() : false;
+
   // var demographicDataStorageValue = (demographicDataStorage) ? false : false;
   var posterImage = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
 //  var playButtonPosition = window.document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].getBoundingClientRect();
@@ -245,7 +247,7 @@ console.log(deviceType);
     vidJs.append(iDiv);
   }
 
-  if (demographicDataStorageValue && AARP?.StayingSharp?.utils?.isUserUHC() == false) {
+  if (demographicDataStorageValue && userUHC) {
       vidJs.classList.add('ss-game-play');
 if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {

@@ -372,7 +372,7 @@ window.addEventListener('load', () => {
         }
 
         if (demographicDataStorageValue && isUhc == false) {
-          var el = document.getElementById('.ss-big-play.sharp-js-demographic-trigger');
+          var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
               el.remove();
         }
         // document.body.classList.add(AARP?.cookies?.at?.ms === '1' ? 'sharp-c-buy-user'

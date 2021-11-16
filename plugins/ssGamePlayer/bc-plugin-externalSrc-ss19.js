@@ -203,7 +203,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
           }
         }
   var gameLink = (gamesList[document.location.pathname.split('/')[2]]) ? gamesList[document.location.pathname.split('/')[2]].url : '#';
-        
+
   vidJs.classList.add(posterImage);
   if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer').length > 0 && document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {
     vidJs.classList.add('ss-game-play-1-button');
@@ -252,6 +252,11 @@ console.log(deviceType);
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
+          var isUhc = true;
+        if (typeof(AARP) == 'object') {
+          isUhc = AARP.StayingSharp.utils.isUserUHC();
+        }
+        if (demographicDataStorageValue && isUhc == false) {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
@@ -263,6 +268,7 @@ console.log(deviceType);
       // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
       // videojsId.play();
       player.play();
+    }
   });
 // }
 
@@ -358,5 +364,21 @@ console.log(deviceType);
     }    
    // }
   });
+
+window.addEventListener('load', () => {
+  var isUhc = true;
+        if (typeof(AARP) == 'object') {
+          isUhc = AARP.StayingSharp.utils.isUserUHC();
+        }
+
+        if (demographicDataStorageValue && isUhc == false) {
+          var el = document.getElementById('.ss-big-play.sharp-js-demographic-trigger');
+              el.remove();
+        }
+        // document.body.classList.add(AARP?.cookies?.at?.ms === '1' ? 'sharp-c-buy-user'
+        //     : 'sharp-c-join-user');
+        // document.body.classList.add(`sharp-c-${AARP?.StayingSharp?.getPageName()}`);
+        // document.body.classList.remove('sharp-c-hide--ads');
+    });
 
 });

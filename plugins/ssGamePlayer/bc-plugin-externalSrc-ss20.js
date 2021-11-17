@@ -253,7 +253,7 @@ console.log(deviceType);
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
   var isUhc = true;
-  var msCookie = 1;
+  var msCookie = '1';
   var imh = 'imh';
         if (typeof(AARP) == 'object') {
           isUhc = AARP.StayingSharp.utils.isUserUHC();
@@ -261,7 +261,7 @@ console.log(deviceType);
           imh = window.getUserType().toLowerCase();
         }
 
-        if (demographicDataStorageValue && isUhc == false && msCookie !== 1 && imh !== 'imh') {
+        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh') {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
@@ -380,7 +380,7 @@ window.addEventListener('load', () => {
           imh = window.getUserType().toLowerCase();
         }
 
-        if (demographicDataStorageValue && isUhc == false && msCookie !== 1 && imh !== 'imh') {
+        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh') {
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
         }

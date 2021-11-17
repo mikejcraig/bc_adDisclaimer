@@ -373,7 +373,8 @@ window.addEventListener('load', () => {
 
         if (demographicDataStorageValue && isUhc == false) {
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
-              el.remove();
+          el.style.visibility = 'hidden';
+            //  el.remove();
         }
         // document.body.classList.add(AARP?.cookies?.at?.ms === '1' ? 'sharp-c-buy-user'
         //     : 'sharp-c-join-user');

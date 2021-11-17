@@ -252,11 +252,14 @@ console.log(deviceType);
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
-          var isUhc = true;
+  var isUhc = true;
+  var msCookie = 1;
         if (typeof(AARP) == 'object') {
           isUhc = AARP.StayingSharp.utils.isUserUHC();
+          msCookie = AARP.cookies.at.ms; 
         }
-        if (demographicDataStorageValue && isUhc == false) {
+
+        if (demographicDataStorageValue && isUhc == false && msCookie !== 1 && window.getUserType().toLowerCase() !== 'imh') {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);
@@ -373,7 +376,7 @@ window.addEventListener('load', () => {
           msCookie = AARP.cookies.at.ms; 
         }
 
-        if (demographicDataStorageValue && isUhc == false && msCookie !== 1 && window.getUserType().toLowerCase() == 'imh') {
+        if (demographicDataStorageValue && isUhc == false && msCookie !== 1 && window.getUserType().toLowerCase() !== 'imh') {
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
         }

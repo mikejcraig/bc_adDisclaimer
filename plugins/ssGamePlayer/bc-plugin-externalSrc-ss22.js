@@ -371,7 +371,7 @@ window.addEventListener('load', () => {
           el.style.visibility = 'hidden';
         }
 
- // if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0 && document.querySelector('.sharp-c-mna-user.sharp-c-join-user.sharp-c-games-detail')) {
+  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0 && document.querySelector('.sharp-c-mna-user.sharp-c-join-user.sharp-c-games-detail')) {
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
@@ -398,7 +398,7 @@ window.addEventListener('load', () => {
   });
 // }
 
- // }
+  }
 
     });
 

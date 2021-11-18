@@ -261,15 +261,6 @@ console.log(deviceType);
 
   insertButton();
 
-  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
-      vidJs.classList.add('ss-game-play');
-// if(deviceType == 0) {
-
-  });
-// }
-
-  }
-
   //  else {
   // //  insertButton();
   // }
@@ -377,6 +368,10 @@ window.addEventListener('load', () => {
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
         }
+
+  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
+      vidJs.classList.add('ss-game-play');
+// if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
   var isUhc = true;
   var msCookie = '1';
@@ -400,6 +395,10 @@ window.addEventListener('load', () => {
       // videojsId.play();
       player.play();
     }
+  });
+// }
+
+  }
     });
 
 });

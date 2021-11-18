@@ -244,6 +244,8 @@ console.log(deviceType);
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
+    var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger').length;
+
     var iDiv = window.document.createElement('a');
         iDiv.setAttribute('aria-hidden', 'true');
         iDiv.setAttribute('tabindex', '-1');
@@ -252,7 +254,9 @@ console.log(deviceType);
         iDiv.className = 'ss-big-play sharp-js-demographic-trigger';
         iDiv.href=gameLink;
         iDiv.target="_self";
+    if (elInsert.length < 1) {    
     vidJs.append(iDiv);
+  }
   }
 
   insertButton();

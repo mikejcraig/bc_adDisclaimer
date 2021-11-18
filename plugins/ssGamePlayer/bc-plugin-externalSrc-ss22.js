@@ -261,7 +261,14 @@ console.log(deviceType);
 
   insertButton();
 
+  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
+      vidJs.classList.add('ss-game-play');
+// if(deviceType == 0) {
 
+  });
+// }
+
+  }
 
   //  else {
   // //  insertButton();
@@ -370,10 +377,6 @@ window.addEventListener('load', () => {
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
         }
-
-  if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0 && document.querySelector('.sharp-c-mna-user.sharp-c-join-user.sharp-c-games-detail')) {
-      vidJs.classList.add('ss-game-play');
-// if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', (event) => {
   var isUhc = true;
   var msCookie = '1';
@@ -392,14 +395,11 @@ window.addEventListener('load', () => {
 
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
-
+      // var videojsId = document.querySelector('.video-js video');
+      // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
+      // videojsId.play();
       player.play();
     }
-  });
-// }
-
-  }
-
     });
 
 });

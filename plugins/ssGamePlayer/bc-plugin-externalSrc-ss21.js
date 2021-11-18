@@ -244,7 +244,7 @@ console.log(deviceType);
 
   var insertButton = function() {
     // var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
-    var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger').length;
+    var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger');
 
     var iDiv = window.document.createElement('a');
         iDiv.setAttribute('aria-hidden', 'true');

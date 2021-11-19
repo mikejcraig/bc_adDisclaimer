@@ -265,6 +265,7 @@ console.log(deviceType);
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
       document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', function(event) {
+  var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default video');        
   var isUhc = true;
   var msCookie = '1';
   var imh = 'imh';
@@ -274,7 +275,7 @@ console.log(deviceType);
           imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
         }
 
-        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh' && vidJs.querySelector('video')) {
+        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh' && vidjs) {
       event.preventDefault();
       event.stopPropagation();
       console.log('event' + event);

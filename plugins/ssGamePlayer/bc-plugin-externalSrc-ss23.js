@@ -271,7 +271,7 @@ console.log(deviceType);
         if (typeof(AARP) == 'object') {
           isUhc = AARP.StayingSharp.utils.isUserUHC();
           msCookie = AARP.cookies.at.ms;
-          imh = window.getUserType().toLowerCase();
+          imh = (window.getUserType()) ? window.getUserType().toLowerCase() : false;
         }
 
         if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh') {
@@ -390,7 +390,7 @@ window.addEventListener('load', function() {
         if (typeof(AARP) == 'object') {
           isUhc = AARP.StayingSharp.utils.isUserUHC();
           msCookie = AARP.cookies.at.ms;
-          imh = window.getUserType().toLowerCase();
+          imh = (window.getUserType()) ? window.getUserType().toLowerCase() : false;
         }
 
         if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh') {

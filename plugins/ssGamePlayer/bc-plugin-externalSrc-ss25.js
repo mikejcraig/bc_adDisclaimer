@@ -264,7 +264,7 @@ console.log(deviceType);
   if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
-      document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', function(event) {
+      document.querySelectorAll('a.sharp-c-button')[1].addEventListener('click', function(event) {
   var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default video');        
   var isUhc = true;
   var msCookie = '1';
@@ -289,28 +289,10 @@ console.log(deviceType);
       player.play();
     }
   });
-
-  //           document.querySelectorAll('.ss-big-play')[0].addEventListener('click', function(event) {
-  // var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default video');        
-  // var isUhc = true;
-  // var msCookie = '1';
-  // var imh = 'imh';
-  //       if (typeof(AARP) == 'object') {
-  //         isUhc = AARP.StayingSharp.utils.isUserUHC();
-  //         msCookie = AARP.cookies.at.ms;
-  //         imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
-  //       }
-
-  //       if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh' && vidjs) {
-  //     event.preventDefault();
-  //     event.stopPropagation();
-  //         var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
-  //         el.style.visibility = 'hidden';
-  //     player.play();
-  //   }
-  // });
 // }
 
+  } else {
+  //  insertButton();
   }
 
 
@@ -417,5 +399,23 @@ console.log(deviceType);
 //           el.style.visibility = 'hidden';
 //         }
 //     });
+      document.querySelectorAll('.ss-big-play')[0].addEventListener('click', function(event) {
+  var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default video');        
+  var isUhc = true;
+  var msCookie = '1';
+  var imh = 'imh';
+        if (typeof(AARP) == 'object') {
+          isUhc = AARP.StayingSharp.utils.isUserUHC();
+          msCookie = AARP.cookies.at.ms;
+          imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
+        }
 
+        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh' && vidjs) {
+      event.preventDefault();
+      event.stopPropagation();
+          var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
+          el.style.visibility = 'hidden';
+      player.play();
+    }
+  });
 });

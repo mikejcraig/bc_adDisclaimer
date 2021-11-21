@@ -416,6 +416,7 @@ console.log(deviceType);
       event.stopPropagation();
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
+                    console.log('player.id ' + player.id());
       player.play();
     }
   });

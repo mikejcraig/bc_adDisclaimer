@@ -264,7 +264,7 @@ console.log(deviceType);
   if (demographicDataStorageValue && document.querySelectorAll('a.sharp-c-button').length > 0) {
       vidJs.classList.add('ss-game-play');
 // if(deviceType == 0) {
-      document.querySelectorAll('a.sharp-c-button')[0].addEventListener('click', function(event) {
+      document.querySelectorAll('a.sharp-c-button')[1].addEventListener('click', function(event) {
   var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default video');        
   var isUhc = true;
   var msCookie = '1';

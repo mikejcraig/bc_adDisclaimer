@@ -417,7 +417,10 @@ console.log(deviceType);
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
                     console.log('player.id ' + player.id());
+//       player.play();
+                    if (player.id() == document.querySelector('#' + player.id()).id) {
       player.play();
+    }
     }
   });
 });

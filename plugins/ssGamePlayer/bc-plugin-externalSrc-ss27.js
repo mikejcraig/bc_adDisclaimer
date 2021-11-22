@@ -287,7 +287,7 @@ console.log(deviceType);
       // var videojsId = document.querySelector('.video-js video');
       // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
       // videojsId.play();
-          if (player.id() == document.querySelector('#' + player.id()).id){
+          if (player.id() == document.querySelectorAll('.video-js')[0].id) {
                       var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
       player.play();
@@ -421,7 +421,7 @@ console.log(deviceType);
           var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
           el.style.visibility = 'hidden';
           console.log('player.id ' + player.id());
-          if (player.id() == document.querySelector('#' + player.id()).id){
+          if (player.id() == document.querySelectorAll('.video-js')[0].id) {
       player.play();
     }
     }

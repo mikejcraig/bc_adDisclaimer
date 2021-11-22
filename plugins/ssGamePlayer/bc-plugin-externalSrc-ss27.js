@@ -282,6 +282,9 @@ console.log(deviceType);
       console.log('event' + event);
       console.log('this player' + player);
 
+          var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
+          el.style.visibility = 'hidden';
+
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
       // var videojsId = document.querySelector('.video-js video');

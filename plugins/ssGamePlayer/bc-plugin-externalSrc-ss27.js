@@ -282,15 +282,14 @@ console.log(deviceType);
       console.log('event' + event);
       console.log('this player' + player);
 
-          var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
-          el.style.visibility = 'hidden';
-
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
       // var videojsId = document.querySelector('.video-js video');
       // var videojsId = document.querySelectorAll(".video-js video[data-player='zPcr0MN8ga']")[0];
       // videojsId.play();
           if (player.id() == document.querySelector('#' + player.id()).id){
+                      var el = document.querySelector('.ss-big-play.sharp-js-demographic-trigger');
+          el.style.visibility = 'hidden';
       player.play();
     }
     }
@@ -375,7 +374,7 @@ console.log(deviceType);
  //     document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button-bg-pebblegrey');
  //     document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.remove('sharp-c-button--disabled');     
 //window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
-    var timeoutTime = 50;
+    var timeoutTime = 100;
        setTimeout(function(){
    window.location.href = gamesList[document.location.pathname.split('/')[2]].url;
     if (document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link').length > 0) {      

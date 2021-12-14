@@ -1,6 +1,6 @@
 videojs.registerPlugin('ampAdDisclaimer', function() {
   var player = this;
-  player.on('ads-request', function(evt) {
+  player.on('ads-ad-started', function(evt) {
 		const disclaimerElement = document.createElement('p');
         disclaimerElement.setAttribute('class', 'ad-disclaimer');
         disclaimerElement.textContent = 'Advertisement';

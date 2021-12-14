@@ -4,7 +4,7 @@ videojs.registerPlugin('ampAdDisclaimer', function() {
 		const disclaimerElement = document.createElement('p');
         disclaimerElement.setAttribute('class', 'ad-disclaimer');
         disclaimerElement.textContent = 'Advertisement';
-        const playerControlBarContainer = document.querySelector(`#${player.id()} .vjs-spacer`);
+        const playerControlBarContainer = document.querySelectorAll(`#${player.id()} .vjs-spacer`)[1];
         playerControlBarContainer.appendChild(disclaimerElement);
   })      
 });

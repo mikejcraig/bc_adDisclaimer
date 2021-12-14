@@ -4,4 +4,5 @@ videojs.registerPlugin('ampAdDisclaimer', function() {
     console.log('ads-request ' + evt);
         const playerControlBarContainer = document.querySelector(`#${player.id()} .vjs-spacer`)[1];
         playerControlBarContainer.textContent = 'Advertisement';
+  })      
 });

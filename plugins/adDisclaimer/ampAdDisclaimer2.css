@@ -4,8 +4,7 @@
 }
 
 .brightcove-container .vjs-layout-small .ad-disclaimer { 
-	margin: 0;
-	color: #fff; 
+	margin: 0; 
 }
 
 .brightcove-container .vjs-ad-playing .vjs-spacer { 
@@ -13,7 +12,7 @@
 }
 
 .brightcove-container .video-js.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
-	display: flex !important;	
+	display: flex;	
 }
 
 @media only screen and (max-width:1024px) {

@@ -12,19 +12,19 @@
 }
 
 .brightcove-container .video-js.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
-	display: flex;	
-}
-
-@media only screen and (max-width:1024px) {
-	.brightcove-container .vjs-control-bar .vjs-play-control {
-		font-size: 0.875em;
-		margin-top: 2px;
-	}
+	display: flex !important;	
 }
 
 .video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover, .video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active, .video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal:active {
     width: auto;
     transition: none;
+}
+
+@media only screen and (max-width:1024px) {
+		.brightcove-container .vjs-control-bar .vjs-play-control {
+			font-size: 0.875em;
+			margin-top: 2px;
+		}
 }
 
 .bc-player-S1ZZK6MHBb_default.vjs-ad-playing .vjs-progress-control .vjs-progress-holder {

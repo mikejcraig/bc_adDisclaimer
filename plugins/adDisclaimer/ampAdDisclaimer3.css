@@ -52,7 +52,7 @@
 	text-shadow: none !important;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:1024px) {
 		.vjs-amp-support.bc-player-S1ZZK6MHBb_default.vjs-ad-playing .vjs-progress-control .vjs-progress-holder {
 		    margin-top: 22px;
 		}

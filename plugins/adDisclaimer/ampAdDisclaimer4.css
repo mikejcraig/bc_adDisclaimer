@@ -62,7 +62,7 @@
 		}*/
 
 		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
-          animation: pulse 1s steps(2, end);
+          animation: pulse 1s linear;
           animation-fill-mode: forwards;
             animation-delay: 10s;
 
@@ -75,7 +75,7 @@
   }
   100% {
     opacity: 0 !important;
-    bottom:-25px;
+    bottom:-30px;
   }
 }
 

@@ -70,12 +70,10 @@
 
 @keyframes pulse {
   0% {
-    background-color: #001F3F;
     opacity: 1 !important;
     bottom:0px;
   }
   100% {
-    background-color: orange;
     opacity: 0 !important;
     bottom:-25px;
   }

@@ -62,7 +62,7 @@
 		}*/
 
 		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
-		-webkit-animation: pulse 1s linear;
+		-webkit-animation: webkit-hide-play  1s linear;
           animation: pulse 1s linear;
            -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -71,7 +71,7 @@
 
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes webkit-hide-play {
   0% {
     opacity: 1 !important;
     bottom:0px;

@@ -62,10 +62,24 @@
 		}*/
 
 		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+		-webkit-animation: pulse 1s linear;
           animation: pulse 1s linear;
+           -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-            animation-delay: 10s;
+                     -webkit-animation-delay: 5s;         
+            animation-delay: 5s;
 
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1 !important;
+    bottom:0px;
+  }
+  100% {
+    opacity: 0 !important;
+    bottom:-30px;
+  }
 }
 
 @keyframes pulse {

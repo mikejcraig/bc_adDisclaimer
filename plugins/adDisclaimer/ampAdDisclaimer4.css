@@ -62,13 +62,13 @@
 		}*/
 
 		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
-          animation: skipbutton 1s linear;
+          animation: pulse 1s linear;
           animation-fill-mode: forwards;
             animation-delay: 10s;
 
 }
 
-@keyframes skipbutton {
+@keyframes pulse {
   0% {
     opacity: 1 !important;
     bottom:0px;

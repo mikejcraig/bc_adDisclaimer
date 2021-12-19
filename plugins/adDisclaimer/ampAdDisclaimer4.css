@@ -72,12 +72,10 @@
 }
 
 @-webkit-keyframes webkithideplay {
-  0% {
-    opacity: 1 !important;
+  from {
     bottom:0px;
   }
-  100% {
-    opacity: 0 !important;
+  to {
     bottom:-30px;
   }
 }

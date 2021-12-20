@@ -73,9 +73,11 @@
 
 @-webkit-keyframes webkithideplay {
   from {
+    opacity: 1 !important;  
     bottom:0px;
   }
   to {
+    opacity: 0 !important;
     bottom:-30px;
   }
 }

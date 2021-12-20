@@ -1,0 +1,103 @@
+.brightcove-container .ad-disclaimer {
+	font-size: 1.2em;
+	margin: 0 0 0 .4em 
+}
+
+.brightcove-container .vjs-layout-small .ad-disclaimer { 
+	margin: 0; 
+}
+
+.brightcove-container .vjs-ad-playing .vjs-spacer { 
+	align-items: center; 
+}
+
+.brightcove-container .video-js.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+	display: flex !important;	
+}
+
+.video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover, .video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active, .video-js.vjs-ad-playing .vjs-volume-panel.vjs-volume-panel-horizontal:active {
+    width: auto;
+    transition: none;
+}
+
+@media only screen and (max-width:1024px) {
+		.brightcove-container .vjs-control-bar .vjs-play-control {
+			font-size: 0.875em;
+			margin-top: 2px;
+		}
+}
+
+.bc-player-S1ZZK6MHBb_default.vjs-ad-playing .vjs-progress-control .vjs-progress-holder {
+    margin: 0;
+    margin-top: 10px;
+    opacity: .7;
+    height: 2px;
+}
+
+.brightcove-container .video-js.vjs-ad-playing .vjs-slider {
+    border: none !important
+}
+
+.aarpe-column-control .vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+	max-height: 22px;
+}
+
+.vjs-ad-playing .vjs-button>.vjs-icon-placeholder:before {
+    font-size: 1.8em;
+    line-height: 1.3;
+}
+
+.brightcove-container .video-js.vjs-ad-playing button:focus {
+	background: none !important; 
+	text-shadow: none !important;
+}
+
+@media only screen and (max-width:1024px) {
+		.vjs-amp-support.bc-player-S1ZZK6MHBb_default.vjs-ad-playing .vjs-progress-control .vjs-progress-holder {
+		    margin-top: 22px;
+		}
+
+/*		.vjs-amp-support.bc-player-S1ZZK6MHBb_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after {
+			display: none;
+		}*/
+
+		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+		-webkit-animation: webkithideplay  1s linear;
+/*          animation: pulse 1s linear;
+*/           -webkit-animation-fill-mode: forwards;
+/*          animation-fill-mode: forwards;
+*/                     -webkit-animation-delay: 5s;         
+/*            animation-delay: 5s;
+*/
+}
+
+@-webkit-keyframes webkithideplay {
+  from {
+    bottom:0px;
+  }
+  to {
+    bottom:-30px;
+  }
+}
+
+/*@keyframes pulse {
+  0% {
+    opacity: 1 !important;
+    bottom:0px;
+  }
+  100% {
+    opacity: 0 !important;
+    bottom:-30px;
+  }
+}*/
+
+.vjs-has-started.vjs-ima3-paused.vjs-user-active.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar,
+.vjs-has-started.vjs-ima3-paused.vjs-user-inactive.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar  {
+    bottom:0 !important;   
+}
+
+}
+
+/*.bc-player-S1ZZK6MHBb_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after {
+	z-index: -1;
+}*/

@@ -1,4 +1,6 @@
-videojs.registerPlugin('ampAdDisclaimer', (event) => {
+videojs.registerPlugin('ampAdDisclaimer', function() {
+
+// videojs.registerPlugin('ampAdDisclaimer', (event) => {
   const variable = this;
   const variableE = event;
 

@@ -1,1 +1,24 @@
-"use strict";var _this=void 0;videojs.registerPlugin("ampAdDisclaimer",function(){_this.on("ads-ad-started",function(){var e,t,i=null===(e=window)||void 0===e||null===(t=e.AARP)||void 0===t||null===(i=t.MetaInfo)||void 0===i||null===(d=i.pageData)||void 0===d?void 0:d.language,d=document.createElement("p");d.setAttribute("class","ad-disclaimer"),d.textContent=i&&"es"==i?"Publicidad":"Advertisement";i=document.querySelectorAll("#".concat(_this.id()," .vjs-spacer"));1<i.length&&i[1].appendChild(d)}),_this.on("ads-ad-ended",function(){var e=document.querySelector(".ad-disclaimer");e&&e.remove()})});
+videojs.registerPlugin('ampAdDisclaimer', (event) => {
+  const variable = this;
+  const variableE = event;
+
+  //     this.on('ads-ad-started', () => {
+//         const siteLanguage = window?.AARP?.MetaInfo?.pageData?.language;
+//         const disclaimerElement = document.createElement('p');
+//         disclaimerElement.setAttribute('class', 'ad-disclaimer');
+//         disclaimerElement.textContent = (siteLanguage && siteLanguage == 'es') ? 'Publicidad' : 'Advertisement';
+//         const playerControlBarContainer = document.querySelectorAll(`#${this.id()} .vjs-spacer`);
+
+//         if (playerControlBarContainer.length > 1) {
+//             playerControlBarContainer[1].appendChild(disclaimerElement);
+//         }
+//     });
+
+//     this.on('ads-ad-ended', () => {
+//         const playerControlBarText = document.querySelector('.ad-disclaimer');
+
+//         if (playerControlBarText) {
+//             playerControlBarText.remove();
+//         }
+//     });
+});

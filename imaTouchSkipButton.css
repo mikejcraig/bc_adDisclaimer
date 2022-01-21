@@ -66,14 +66,16 @@
 		.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
 		/* -webkit-animation: webkithideplay  1s linear; */
           animation: pulse 1s linear;
-           -webkit-animation-fill-mode: forwards;
+           /* -webkit-animation-fill-mode: forwards; */
           animation-fill-mode: forwards;
                      /* -webkit-animation-delay: 5s; */
            animation-delay: 5s;
 
 }
 
-
+.show-ad-controls {
+	bottom:auto !important;
+}
 
 @keyframes pulse {
   0% {

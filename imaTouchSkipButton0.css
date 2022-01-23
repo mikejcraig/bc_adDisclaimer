@@ -35,8 +35,8 @@
     bottom:0;
 }
 
-.vjs-ima3-ad-container, .vjs-ima3-click-tracker {
-			pointer-events: all !important;
+.vjs-ad-playing .vjs-ima3-ad-container, .vjs-ima3-click-tracker {
+			pointer-events: all;
 }
 
 }

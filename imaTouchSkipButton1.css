@@ -1,0 +1,37 @@
+@keyframes hidecontrols {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: -64px;
+  }
+}
+
+.aarpe-column-control .vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+    animation: hidecontrols 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+.vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar.show-ad-controls {
+		animation: hidecontrols 1s linear;
+		animation-fill-mode: backwards;
+		animation-delay: 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .vjs-ad-controls.vjs-ad-playing .vjs-control-bar.vjs-ad-control-bar {
+        animation: hidecontrols 1s linear;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+    }
+
+
+
+
+
+.vjs-ad-playing .vjs-ima3-ad-container, .vjs-ima3-click-tracker {
+			pointer-events: all;
+}
+
+}

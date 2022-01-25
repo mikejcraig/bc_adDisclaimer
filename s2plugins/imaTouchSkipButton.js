@@ -1,0 +1,1 @@
+"use strict";videojs.registerPlugin("imaTouchSkipButton",function(){var t=this;this.on("ads-pause",function(){var o=document.querySelector("#".concat(t.id()," .vjs-ad-control-bar"));o&&o.classList.add("show-ad-controls")}),this.on("ads-play",function(){var o=document.querySelector("#".concat(t.id()," .vjs-ad-control-bar"));o&&o.classList.remove("show-ad-controls")})});

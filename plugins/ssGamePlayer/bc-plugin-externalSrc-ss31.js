@@ -278,14 +278,14 @@ console.log(deviceType);
     var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger');
 
     var placeDemo = '';
-    //  var isUhc = true;
-    // var msCookie = '1';
-    // var imh = 'imh';
-    //     if (typeof(AARP) == 'object') {
-    //       isUhc = AARP.StayingSharp.utils.isUserUHC();
-    //       msCookie = AARP.cookies.at.ms;
-    //       imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
-    //     }
+     var isUhc = true;
+    var msCookie = '1';
+    var imh = 'imh';
+        if (typeof(AARP) == 'object') {
+          isUhc = AARP.StayingSharp.utils.isUserUHC();
+          msCookie = AARP.cookies.at.ms;
+          imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
+        }
 
         if (demographicDataStorageValue == false) {
           placeDemo = 'sharp-js-demographic-trigger';
@@ -299,7 +299,7 @@ console.log(deviceType);
         iDiv.className = 'ss-big-play ' + placeDemo;
         iDiv.href=gameLink;
         iDiv.target="_self";
-    if (elInsert.length < 1) {    
+    if (elInsert.length < 1 && isUhc == true) {    
     vidJs.append(iDiv);
   }
   }

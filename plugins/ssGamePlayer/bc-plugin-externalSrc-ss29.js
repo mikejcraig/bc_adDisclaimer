@@ -257,7 +257,7 @@ console.log(deviceType);
           imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
         }
 
-        if (demographicDataStorageValue && isUhc == false && msCookie !== '1' && imh !== 'imh' && vidjs) {
+        if (demographicDataStorageValue == false) {
           placeDemo = 'sharp-js-demographic-trigger'
         }
 

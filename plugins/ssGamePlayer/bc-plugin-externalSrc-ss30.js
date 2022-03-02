@@ -222,7 +222,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
       window.location.href = gamesList[fUrl].url;
     };
   })
-    
+
   vidJs.classList.add(posterImage);
   if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer').length > 0 && document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {
     vidJs.classList.add('ss-game-play-1-button');
@@ -383,8 +383,10 @@ console.log(deviceType);
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
     if (deviceType == 0 && isSafari == false) {
+      if( typeof(window.google) === "object" ) {
         var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;
+      }
     } else {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];

@@ -223,7 +223,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
     // };
 
         if (deviceType == 0 && this.currentTime() > 0) {
-        var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
+        // var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;    
        } else {
      player.dispose();

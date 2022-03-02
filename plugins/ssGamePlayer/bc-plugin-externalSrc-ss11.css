@@ -194,7 +194,7 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 } 
 
-.ss-big-play.sharp-js-demographic-trigger {
+.ss-big-play, .ss-big-play.sharp-js-demographic-trigger {
     height: 100%;
     width: 100%;
     position: absolute;

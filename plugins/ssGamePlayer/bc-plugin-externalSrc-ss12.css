@@ -168,7 +168,7 @@
     background-image: url("https://cdn.aarp.net/content/dam/specialized-membership/staying-sharp/staying-sharp-homepage/games/stacked-discs-ani-thumbnail-Exclusive-A.gif") !important;
 }
 
-.sharp-c-uhc-user button.vjs-big-play-button {
+.sharp-c-hide--ads button.vjs-big-play-button, .sharp-c-uhc-user button.vjs-big-play-button {
     display: none !important;
 }
 

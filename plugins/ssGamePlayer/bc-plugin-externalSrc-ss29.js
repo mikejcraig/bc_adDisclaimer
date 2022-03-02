@@ -214,6 +214,15 @@ videojs.registerPlugin('ssGamePlayer', function() {
         }
   var gameLink = (gamesList[document.location.pathname.split('/')[2]]) ? gamesList[document.location.pathname.split('/')[2]].url : '#';
 
+    player.on('timeupdate', function () {
+      var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
+      console.log(this.currentTime());
+
+      if(this.currentTime() > 0) {
+        window.location.href = gamesList[fUrl].url;
+      };
+    })
+
   vidJs.classList.add(posterImage);
   if(document.querySelectorAll('.embeddedBrightcoveVideoPlayer').length > 0 && document.querySelectorAll('.embeddedBrightcoveVideoPlayer')[0].nextElementSibling.querySelectorAll('a[role=button]').length == 1) {
     vidJs.classList.add('ss-game-play-1-button');

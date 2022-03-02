@@ -258,7 +258,7 @@ console.log(deviceType);
         }
 
         if (demographicDataStorageValue == false) {
-          placeDemo = 'sharp-js-demographic-trigger'
+          placeDemo = 'sharp-js-demographic-trigger';
         }
 
     var iDiv = window.document.createElement('a');

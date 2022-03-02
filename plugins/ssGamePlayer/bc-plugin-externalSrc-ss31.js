@@ -223,7 +223,7 @@ videojs.registerPlugin('ssGamePlayer', function() {
     // };
 
         if (deviceType == 0 && this.currentTime() > 0) {
-        // var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
+        var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;    
        } else {
      player.dispose();
@@ -277,7 +277,7 @@ console.log(deviceType);
     // var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
     var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger');
 
-    var placeDemo = '';
+    var placeDemo = 'sharp-js-demographic-trigger';
     //  var isUhc = true;
     // var msCookie = '1';
     // var imh = 'imh';

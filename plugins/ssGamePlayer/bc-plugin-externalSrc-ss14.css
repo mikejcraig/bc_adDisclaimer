@@ -194,11 +194,16 @@ a.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link.sharp-c-button--disab
     pointer-events: all;
 } 
 
+.sharp-c-hide--ads .ss-big-play.sharp-js-demographic-trigger, .sharp-c-hide--ads .ss-big-play, .sharp-c-uhc-user .ss-big-play.sharp-js-demographic-trigger, .sharp-c-uhc-user .ss-big-play {
+    visibility: visible;
+}
+
 .ss-big-play.sharp-js-demographic-trigger, .ss-big-play {
     height: 100%;
     width: 100%;
     position: absolute;
     opacity: .2;
+    visibility: hidden;
 }
 
 .ss-game-play.video-js.bc-player-zPcr0MN8ga_default.vjs-has-started {

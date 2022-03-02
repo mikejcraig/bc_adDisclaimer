@@ -341,8 +341,11 @@ console.log(deviceType);
        document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button-bg-pebblegrey');
       document.querySelectorAll('.sharp-c-button.sharp-js-demographic-trigger.sharp-c-link')[0].classList.add('sharp-c-button--disabled');
         if (deviceType == 0) {
+              if( typeof(window.google) === "object" ) {
         var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
-         window.location.href = gamesList[fUrl].url;    } else {
+         window.location.href = gamesList[fUrl].url;    
+        } 
+       } else {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];
         emptyBC.classList.add(document.location.pathname.split('/')[2]);
@@ -383,10 +386,8 @@ console.log(deviceType);
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
     if (deviceType == 0 && isSafari == false) {
-      if( typeof(window.google) === "object" ) {
         var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;
-      }
     } else {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];

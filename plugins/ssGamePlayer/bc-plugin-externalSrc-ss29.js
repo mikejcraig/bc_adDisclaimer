@@ -244,9 +244,9 @@ videojs.registerPlugin('ssGamePlayer', function() {
 console.log(deviceType);
 
   var insertButton = function() {
-    var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
+    var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
     var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger');
-    
+
     var placeDemo = '';
      var isUhc = true;
     var msCookie = '1';

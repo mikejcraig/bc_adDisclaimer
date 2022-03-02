@@ -244,18 +244,18 @@ videojs.registerPlugin('ssGamePlayer', function() {
 console.log(deviceType);
 
   var insertButton = function() {
-    var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
+    // var vidjs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
     var elInsert = document.querySelectorAll('.ss-big-play.sharp-js-demographic-trigger');
 
     var placeDemo = '';
-     var isUhc = true;
-    var msCookie = '1';
-    var imh = 'imh';
-        if (typeof(AARP) == 'object') {
-          isUhc = AARP.StayingSharp.utils.isUserUHC();
-          msCookie = AARP.cookies.at.ms;
-          imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
-        }
+    //  var isUhc = true;
+    // var msCookie = '1';
+    // var imh = 'imh';
+    //     if (typeof(AARP) == 'object') {
+    //       isUhc = AARP.StayingSharp.utils.isUserUHC();
+    //       msCookie = AARP.cookies.at.ms;
+    //       imh = (typeof(window.getUserType) == 'function') ? window.getUserType().toLowerCase() : false;
+    //     }
 
         if (demographicDataStorageValue == false) {
           placeDemo = 'sharp-js-demographic-trigger';

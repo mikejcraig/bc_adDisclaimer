@@ -1,13 +1,5 @@
 videojs.registerPlugin('ssGamePlayer', function() {
   var player = this;
-  // get
-var whereYouAt = player.currentTime();
-console.log('currentTime');
-console.log(whereYouAt);
-// set
-// player.currentTime(120); 
-// 2 minutes into the video
-
   var isSafari = (navigator.userAgent.toLowerCase().indexOf('safari') != -1 && navigator.userAgent.toLowerCase().indexOf('chrome') == -1) ? true : false;
   var vidJs = window.document.querySelector('.video-js.bc-player-zPcr0MN8ga_default');
   var demographicDataStorage = localStorage.getItem('DemographicData');

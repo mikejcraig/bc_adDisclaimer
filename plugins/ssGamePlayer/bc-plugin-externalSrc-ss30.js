@@ -385,9 +385,12 @@ console.log(deviceType);
   player.on('ads-ad-ended', function(evt) {
    // if(window.location.href == 'https://stayingsharp-l.aarp.org/articles/mindful/long-term-meditators.html'){
      // window.location.href = '/games-play/ss-games/path-finder/';
+     var testvar = false;
     if (deviceType == 0 && isSafari == false) {
         var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;
+    } else if (testvar) {  
+      return;   
     } else {
      player.dispose();
      var emptyBC = document.querySelectorAll('.embeddedBrightcoveVideoPlayer .brightcove-container')[0];

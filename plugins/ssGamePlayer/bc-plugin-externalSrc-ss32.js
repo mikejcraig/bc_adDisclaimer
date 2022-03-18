@@ -217,12 +217,13 @@ videojs.registerPlugin('ssGamePlayer', function() {
   player.on('timeupdate', function () {
     var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
     var piDomain = document.location.host.match('-pi');
-    console.log(this.currentTime());
+
 
     // if(this.currentTime() > 0) {
     //   window.location.href = gamesList[fUrl].url;
     // };
-if( this.tagAttributes['data-player'] && this.tagAttributes['data-player'] == 'zPcr0MN8ga' && piDomain || !piDomain) {
+if( player.tagAttributes['data-player'] && player.tagAttributes['data-player'] == 'zPcr0MN8ga' && piDomain || !piDomain) {
+  console.log(this.currentTime());
         if (deviceType == 0 && this.currentTime() > 0) {
         var fUrl = (document.location.host.match('cms') || document.location.pathname.match('qa-bucket')) ? document.location.pathname.split('/')[document.location.pathname.split('/').length -1].split('.html')[0] : document.location.pathname.split('/')[2];
          window.location.href = gamesList[fUrl].url;

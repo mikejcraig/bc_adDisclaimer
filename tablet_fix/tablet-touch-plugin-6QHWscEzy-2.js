@@ -33,6 +33,11 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
         iDivP.className = 'vjs-icon-placeholder';
     iDiv.append(iDivP);
     vidJs.append(iDiv);
+      
+      $aarpe( '.vjs-big-play-button.altstyle' ).click(function( event ) {
+                event.preventDefault();
+                _this.play();
+              });
     }
     }, 100);
 

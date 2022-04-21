@@ -11,6 +11,8 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
 
 
     var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
+var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+var tOutTime = (isFirefox) ? 1000 : 500;
 
     setTimeout(function() {
     if (gamesStageSite) {
@@ -27,7 +29,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     window.document.getElementsByClassName('vjs-big-play-button')[0].classList.remove('hide');
 
     }
-    }, 500);
+    }, tOutTime);
 
     _this.on('ima3-started', function () {
         var windowWidthScrn = document.documentElement.clientWidth;

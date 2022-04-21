@@ -24,7 +24,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     _this.ima3.settings.serverUrl = bidvastTag; 
     console.log('pwt video ready');
     }
-    window.document.getElementsByClassName('vjs-big-play-button')[0].classList.add('show');
+    window.document.getElementsByClassName('vjs-big-play-button')[0].classList.remove('hide');
 
     }
     }, 100);

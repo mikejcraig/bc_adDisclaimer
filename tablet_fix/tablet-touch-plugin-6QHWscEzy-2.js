@@ -10,6 +10,8 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
     setTimeout(function() {
     if (gamesStageSite) {
+    window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
+
     var bidvastTag = AARP.ads.refreshAdsBySlot('gamesplayer');
     var bidVasttagLength = (bidvastTag && bidvastTag.split('cust_params=').length == 2) ? bidvastTag.split('cust_params=')[1].length > 0 : false;
     var adplayed = sessionStorage.getItem('bcplaycapAdPlayed');

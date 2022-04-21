@@ -16,7 +16,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
                               console.log('bidvastTag ' + bidvastTag);
 
     if (!adplayed && bidVasttagLength) {
-    e.ima3.settings.serverUrl = bidvastTag; 
+    _this.ima3.settings.serverUrl = bidvastTag; 
     console.log('pwt video ready');
     }
     }

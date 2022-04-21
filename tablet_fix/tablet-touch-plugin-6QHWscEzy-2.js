@@ -4,7 +4,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
   var _this = this;
       var gamesStageSite1 = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
         if (gamesStageSite1) {
-    window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
+    window.document.getElementsByClassName('vjs-big-play-button')[0].classList.add('hide');
   }
   this.on('loadedmetadata', function () {
     var playerId = _this.id();
@@ -24,21 +24,8 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     _this.ima3.settings.serverUrl = bidvastTag; 
     console.log('pwt video ready');
     }
-          var vidJs = window.document.getElementsByTagName('video-js')[0];
-    var iDiv = window.document.createElement('div');
-        iDiv.setAttribute('aria-hidden', 'false');
-        iDiv.className = 'vjs-big-play-button altstyle';
-    var iDivP = window.document.createElement('p');
-        iDivP.setAttribute('aria-hidden', 'true');
-        iDivP.className = 'vjs-icon-placeholder';
-    iDiv.append(iDivP);
-    vidJs.append(iDiv);
-      
-              $aarpe( '.vjs-big-play-button.altstyle' ).click(function( event ) {
-                event.preventDefault();
-                myPlayer = videojs.getAllPlayers()[0];
-                myPlayer.play();
-              });
+    window.document.getElementsByClassName('vjs-big-play-button')[0].classList.add('show');
+
     }
     }, 100);
 

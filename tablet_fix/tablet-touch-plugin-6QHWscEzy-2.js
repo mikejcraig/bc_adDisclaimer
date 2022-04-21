@@ -2,15 +2,16 @@
 
 videojs.registerPlugin('tabletTouchSkipButton', function () {
   var _this = this;
-
+      var gamesStageSite1 = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
+        if (gamesStageSite1) {
+    window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
+  }
   this.on('loadedmetadata', function () {
     var playerId = _this.id();
 
 
     var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
-        if (gamesStageSite) {
-    window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
-  }
+
     setTimeout(function() {
     if (gamesStageSite) {
 

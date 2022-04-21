@@ -34,9 +34,10 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     iDiv.append(iDivP);
     vidJs.append(iDiv);
       
-      $aarpe( '.vjs-big-play-button.altstyle' ).click(function( event ) {
+              $aarpe( '.vjs-big-play-button.altstyle' ).click(function( event ) {
                 event.preventDefault();
-                _this.play();
+                myPlayer = videojs.getAllPlayers()[0];
+                myPlayer.play();
               });
     }
     }, 100);

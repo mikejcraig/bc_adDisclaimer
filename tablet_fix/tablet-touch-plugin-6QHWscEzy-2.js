@@ -27,7 +27,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     window.document.getElementsByClassName('vjs-big-play-button')[0].classList.remove('hide');
 
     }
-    }, 100);
+    }, 150);
 
     _this.on('ima3-started', function () {
         var windowWidthScrn = document.documentElement.clientWidth;

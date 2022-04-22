@@ -12,7 +12,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
 
     var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
 var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-var tOutTime = (isFirefox) ? 7000 : 500;
+var tOutTime = (isFirefox) ? 6000 : 500;
 
     setTimeout(function() {
     if (gamesStageSite) {

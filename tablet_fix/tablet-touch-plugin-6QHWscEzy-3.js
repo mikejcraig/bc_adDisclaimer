@@ -10,7 +10,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     var playerId = _this.id();
 
 
-    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
+    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
 var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 var tOutTime = (isFirefox) ? 500 : 500;
 

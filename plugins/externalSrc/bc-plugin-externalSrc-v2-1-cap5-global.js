@@ -31,11 +31,11 @@ videojs.registerPlugin('externalSrc', function() {
     vidJs.append(iDiv);
   }
 
-  var parentAdContainer = document.querySelector('.bc-player-NI7d9M1tR_default.vjs-ad-controls.vjs-ad-playing');
+  // var parentAdContainer = document.querySelector('.bc-player-NI7d9M1tR_default.vjs-ad-controls.vjs-ad-playing');
 
-  if (gamesStageSiteEnabled && parentAdContainer) {
-      parentAdContainer.classList.addClass('games-staging');
-  }
+  // if (gamesStageSiteEnabled && parentAdContainer) {
+  //     parentAdContainer.classList.addClass('games-staging');
+  // }
 
   if(gamesStageSite && !triviaGame) {
 //	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade') ? true : false;
@@ -66,6 +66,13 @@ videojs.registerPlugin('externalSrc', function() {
     player.src(playerSource);
   }
 
+player.on('ima3-started', function () {
+  var parentAdContainer = document.querySelector('.bc-player-NI7d9M1tR_default.vjs-ad-controls.vjs-ad-playing');
+  if (gamesStageSiteEnabled && parentAdContainer) {
+      parentAdContainer.classList.add('games-staging');
+  }
+    });	
+	
   player.on('adend', function(evt) {
       sessionStorage.setItem('bcplaycapAdPlayed', 'true');
   });

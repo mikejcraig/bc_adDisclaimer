@@ -78,33 +78,48 @@ player.on('ima3-started', function () {
   });
 
 if(gamesStageSiteEnabled){
-    this.on('loadedmetadata', function () {
-      if (window.googletag && googletag.apiReady) {
-        googletag.pubads().addEventListener('impressionViewable', function(event) {
+    this.on('loadedmetadata', function() {
+        if (window.googletag) {
+            googletag.pubads().addEventListener('impressionViewable', function(event) {
+                var slot = event.slot;
+                var leaderContainer = document.querySelector('.advertisement--games-header');
+                var leaderVisible = leaderContainer && leaderContainer.clientHeight > 0;
+                var puzzleCat = document.querySelector('meta#aarpAdUnit3');
+                var halfPage = document.querySelector(".aarpe-ad[data-adsize='300x600']");
+                var leaderSlot = document.querySelector(".aarpe-ad[data-adsize='leader']");
+                var leaderSlotData = googletag.pubads().getSlots()
+                    .filter(function(slot) {
+                        if (slot.getSlotElementId() == leaderSlot.id) {
+                            return slot;
+                        }});
+                var halfPageSlotData = googletag.pubads().getSlots()
+                    .filter(function(slot) {
+                        if (slot.getSlotElementId() == halfPage.id) {
+                            return slot;
+                        }});
+                if (halfPage) {
+                    halfPage.style.minWidth = '300px';
+                    halfPage.style.minHeight = '600px';
+                }
+                if (this.timeoutID) {
+                    clearTimeout(this.timeoutID);
+                }
+                if (document.location.pathname.indexOf('/games/') > -1 && puzzleCat && puzzleCat.content == 'puzzles') {
+                    this.timeoutID = setTimeout(function() {
+                        if (leaderSlot && document.querySelector('.advertisement--games-header').clientHeight > 0) {
+                            googletag.pubads().refresh();
+                            console.log('leaderVisible ' + leaderVisible);
+                        }
+                        if (slot !== leaderSlotData[0] && document.querySelector('.advertisement--games-header').clientHeight < 1) {
+                            googletag.pubads().refresh(halfPageSlotData);
+                        }
+                    }, 30 * 1000);
+                } else {
+                    clearTimeout(this.timeoutID);
+                }
 
-          var slot = event.slot;
-          var leaderContainer = document.querySelector('.advertisement--games-header');
-          var leaderVisible = leaderContainer && leaderContainer.clientHeight > 0;
-          var puzzleCat = document.querySelector('meta#aarpAdUnit3');
-          var halfPage = document.querySelector(".aarpe-ad[data-adsize='300x600']")
-          if (halfPage) {
-            halfPage.style.minWidth = '300px';
-            halfPage.style.minHeight = '600px';
-          }
-         if (document.location.pathname.indexOf('/games/') > -1 && puzzleCat && puzzleCat.content == 'puzzles') {
-            this.timeoutID = setTimeout(function() {
-              if (leaderVisible) {
-               // googletag.pubads().refresh();
-               AARP.ads.refreshAdsBySlot()
-               console.log('leaderVisible ' + leaderVisible)
-              }
-            }, 20 * 1000);
-         } else {
-           clearTimeout(this.timeoutID);
-         }
-
-        });
-  }
+            });
+        }
     });
 }
 

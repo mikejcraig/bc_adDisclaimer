@@ -110,7 +110,7 @@ if(gamesStageSiteEnabled){
                             googletag.pubads().refresh();
                             console.log('leaderVisible ' + leaderVisible);
                         }
-                        if (slot !== leaderSlotData[0] && document.querySelector('.advertisement--games-header').clientHeight < 1) {
+                        if (document.querySelector('.advertisement--games-header').clientHeight < 1) {
                             googletag.pubads().refresh(halfPageSlotData);
                         }
                     }, 30 * 1000);

@@ -77,7 +77,7 @@ player.on('ima3-started', function () {
       sessionStorage.setItem('bcplaycapAdPlayed', 'true');
   });
 
-if(gamesStageSiteEnabled){
+//if(gamesStageSiteEnabled){
     this.on('loadedmetadata', function() {
         if (window.googletag) {
             googletag.pubads().addEventListener('impressionViewable', function(event) {
@@ -132,6 +132,6 @@ if(gamesStageSiteEnabled){
             });
         }
     });
-}
+//}
 
 });

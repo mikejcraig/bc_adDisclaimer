@@ -87,7 +87,7 @@ player.on('ima3-started', function () {
                 var puzzleCat = document.querySelector('meta#aarpAdUnit3');
                 var halfPage = document.querySelector(".aarpe-ad[data-adsize='300x600']");
                 var leaderSlot = document.querySelector(".aarpe-ad[data-adsize='leader']");
-                var mobileSlot = document.querySelector(".aarpe-ad#adslot1010");
+                var mobileSlot = document.querySelector(".aarpe-ad#adslot1010, #ad-grayarea-content");
 
                 var leaderSlotData = leaderSlot && googletag.pubads().getSlots()
                     .filter(function(slot) {

@@ -132,7 +132,7 @@ player.on('ima3-started', function () {
       sessionStorage.setItem('bcplaycapAdPlayed', 'true');
   });
 
-  if (gamesStageSiteEnabled) {
+//  if (gamesStageSiteEnabled) {
       this.on('loadedmetadata', function() {
               googletag.pubads().refresh(googletag.pubads().getSlots().filter(function(slot){
                 if(slot.getSlotElementId() == "adslot1010"){
@@ -143,5 +143,5 @@ player.on('ima3-started', function () {
                 }
               }));
       });
-  }
+//  }
 });

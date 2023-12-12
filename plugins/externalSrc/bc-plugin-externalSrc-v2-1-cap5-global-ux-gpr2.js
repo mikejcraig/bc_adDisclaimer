@@ -42,7 +42,7 @@ videojs.registerPlugin('externalSrc', function() {
 //	    var gameTarget = (window.document.getElementsByName('aarpAdUnit').length > 3 && window.document.getElementsByName('aarpAdUnit')[2].content == 'arcade') ? true : false;
 	    var gameTarget = true;
 	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
-    if(gameTarget && !gamesStageSiteEnabled && !gamesStageSiteEnabled2){
+    if(gameTarget && !gamesStageSiteEnabled || gameTarget && !gamesStageSiteEnabled2){
     	  if(!!cookieValue && bcplaycapAdPlayed == 'true') {
 	    console.log('NavigationType ' + pageRefresh);
             window.document.getElementsByClassName('vjs-big-play-button')[0].remove();

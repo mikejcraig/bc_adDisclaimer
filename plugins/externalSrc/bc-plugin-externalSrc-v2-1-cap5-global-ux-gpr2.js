@@ -110,7 +110,7 @@ videojs.registerPlugin('externalSrc', function() {
     }
 
     if(gameTarget && gamesStageSiteEnabled2){
-
+      window.document.querySelector('video-js').classList.add('games-player');
     }
 
   }

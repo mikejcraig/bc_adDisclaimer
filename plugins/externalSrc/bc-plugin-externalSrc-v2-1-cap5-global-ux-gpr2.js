@@ -133,15 +133,15 @@ player.on('ima3-started', function () {
   });
 
 //  if (gamesStageSiteEnabled) {
-      this.on('loadedmetadata', function() {
-              googletag.pubads().refresh(googletag.pubads().getSlots().filter(function(slot){
-                if(slot.getSlotElementId() == "adslot1010"){
-                  var mobSlot = document.querySelector("#adslot1010 > div");
-                    if (mobSlot == null) {
-                    return slot
-                  }
-                }
-              }));
-      });
+      // this.on('loadedmetadata', function() {
+      //         googletag.pubads().refresh(googletag.pubads().getSlots().filter(function(slot){
+      //           if(slot.getSlotElementId() == "adslot1010"){
+      //             var mobSlot = document.querySelector("#adslot1010 > div");
+      //               if (mobSlot == null) {
+      //               return slot
+      //             }
+      //           }
+      //         }));
+      // });
 //  }
 });

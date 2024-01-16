@@ -43,6 +43,7 @@
   padding-bottom: 0;
 }
 
-#ad-mobile-gameplay > div {
+#ad-mobile-gameplay {
     min-width: 320px;
+    position: absolute;
 }

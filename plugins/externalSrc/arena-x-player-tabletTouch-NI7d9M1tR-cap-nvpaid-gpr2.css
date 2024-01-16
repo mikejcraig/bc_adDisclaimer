@@ -42,3 +42,7 @@
   height: 278px;
   padding-bottom: 0;
 }
+
+#ad-mobile-gameplay > div {
+    min-width: 320px;
+}

@@ -16,7 +16,7 @@ var tOutTime = (isFirefox) ? 600 : 600;
 
     setTimeout(function() {
     if (gamesStageSite) {
-    var pwtBid = (typeof PWT === 'object' && typeof PWT.requestBids === 'function');
+    var pwtBid = (typeof PWT === 'object' && typeof PWT.requestBids === 'function' && Object.keys(PWT.bidMap).length > 0);
     var bidvastTag = (pwtBid) ? AARP.ads.refreshAdsBySlot('gamesplayer') : false;
     var bidVasttagLength = (bidvastTag && bidvastTag.split('cust_params=').length == 2) ? bidvastTag.split('cust_params=')[1].length > 0 : false;
     var adplayed = sessionStorage.getItem('bcplaycapAdPlayed');

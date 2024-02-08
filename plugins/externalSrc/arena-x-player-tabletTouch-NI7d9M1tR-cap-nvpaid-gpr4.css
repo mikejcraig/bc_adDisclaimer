@@ -43,6 +43,13 @@
   padding-bottom: 0;
 }
 
+/* Custom Styling for the Games Player */
+.player-ark-aarp-container .video-js.bc-player-NI7d9M1tR_default {
+  height: 278px;
+  padding-bottom: 0;
+}
+
+
 /* #ad-mobile-gameplay {
     min-width: 320px;
     position: absolute;

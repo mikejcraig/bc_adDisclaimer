@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-#container-81ea044270.uxdia-leaderboard-js--sticky+.aarp-blog-header-sticky .aarp-c-header {
-    top: unset !important;
+#container-81ea044270+.aarp-blog-header-sticky .aarp-c-header {
+    top: 0 !important;
 }
 }

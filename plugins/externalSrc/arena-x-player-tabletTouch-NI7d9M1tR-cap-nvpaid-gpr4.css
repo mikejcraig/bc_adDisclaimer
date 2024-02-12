@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-.aarp-blog-header-sticky .aarp-c-header {
+#container-81ea044270.cmp-container+.everywhere-header.aarp-blog-header-sticky .aarp-c-header {
     top: 0 !important;
 }
 }

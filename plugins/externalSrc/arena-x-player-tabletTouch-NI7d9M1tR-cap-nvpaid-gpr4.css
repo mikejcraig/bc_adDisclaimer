@@ -64,3 +64,9 @@
     top: 0 !important;
 }
 }
+
+@media (orientation: portrait) {
+.Game__gameAd___79tEKuJ1 {
+     z-index: 2000002;
+}
+}

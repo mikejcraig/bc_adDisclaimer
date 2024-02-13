@@ -144,10 +144,9 @@ player.on('ima3-started', function () {
       //         }));
       // });
 //  }
-	 if (gamesStageSiteEnabled2) {
-
-  document.querySelector('#container-81ea044270').setAttribute('data-scroll', false);
-  document.querySelector('#container-81ea044270').id = '';
-  AARP.header.sticky = false;
-}
+// 	 if (gamesStageSiteEnabled2) {
+//   document.querySelector('#container-81ea044270').setAttribute('data-scroll', false);
+//   document.querySelector('#container-81ea044270').id = '';
+//   AARP.header.sticky = false;
+// }
 });

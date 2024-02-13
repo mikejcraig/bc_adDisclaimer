@@ -60,9 +60,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-/* #container-81ea044270.cmp-container+.everywhere-header.aarp-blog-header-sticky .aarp-c-header {
+#container-81ea044270.cmp-container+.everywhere-header.aarp-blog-header-sticky .aarp-c-header {
     top: 0 !important;
-} */
+}
 	.Game__gameAd___79tEKuJ1 {
      z-index: 2000002;
 }
@@ -72,7 +72,7 @@
 .Game__gameAd___79tEKuJ1 {
      z-index: 2000002;
 }
-.Game__contentCell___2h3H3n1d {
-/*     z-index: 2000002; */
-}
+/* .Game__contentCell___2h3H3n1d {
+     z-index: 2000002;
+} */
 }

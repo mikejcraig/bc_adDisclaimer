@@ -135,6 +135,7 @@ player.on('ima3-started', function () {
 var windowWidthScrn = document.documentElement.clientWidth;
  if (windowWidthScrn < 768) {
       this.on('loadedmetadata', function() {
+	setTimeout(function() {
               googletag.pubads().refresh(googletag.pubads().getSlots().filter(function(slot){
                 if(slot.getSlotElementId() == "adslot1010"){
                   var mobSlot = document.querySelector("#adslot1010 > div > iframe");
@@ -143,6 +144,7 @@ var windowWidthScrn = document.documentElement.clientWidth;
                   }
                 }
               }));
+	}, 500);
       });
  }
 // 	 if (gamesStageSiteEnabled2) {

@@ -144,7 +144,7 @@ var windowWidthScrn = document.documentElement.clientWidth;
                   }
                 }
               }));
-	}, 500);
+	}, 1000);
       });
  }
 // 	 if (gamesStageSiteEnabled2) {

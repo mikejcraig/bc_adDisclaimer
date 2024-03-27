@@ -24,8 +24,8 @@ var tOutTime = (isFirefox) ? 600 : 600;
     var preservisionSponsorshipTest = (preservisionSponsorship && preservisionSponsorship.content) ? preservisionSponsorship.content : false;
 
     console.log('bidvastTag ' + bidvastTag);
-    if (!adplayed && bidVasttagLength && (preservisionSponsorshipTest !== 'gamename=aarp-trivia' || preservisionSponsorshipTest !==  'gamename=preservision-klondike-solitaire'
-    || preservisionSponsorshipTest !== 'gamename=quaker-oats-klondike-solitaire')) {
+    if (!adplayed && bidVasttagLength && (preservisionSponsorshipTest !== 'gamename=aarp-trivia' && preservisionSponsorshipTest !==  'gamename=preservision-klondike-solitaire'
+    && preservisionSponsorshipTest !== 'gamename=quaker-oats-klondike-solitaire')) {
     _this.ima3.settings.serverUrl = bidvastTag;
     console.log('pwt video ready');
     }

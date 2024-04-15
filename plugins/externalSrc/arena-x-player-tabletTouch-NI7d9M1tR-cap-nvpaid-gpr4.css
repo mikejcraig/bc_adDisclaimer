@@ -81,3 +81,24 @@
 	min-height: 600px;
 }
 }
+
+.AdBlock__container___I5SaNZn8 {
+    position: relative;
+}
+
+.AdBlock__container___I5SaNZn8::before {
+    content: 'ADVERTISEMENT';
+    display: block;
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+    overflow: hidden;
+    font-size: .75em;
+    line-height: 16px;
+    color: #7c7c7c;
+}
+
+.AdBlock__container___I5SaNZn8::before {
+    left: calc(50% - 41px);
+    top: -1.6em
+}

@@ -102,3 +102,22 @@
     left: calc(50% - 41px);
     top: -1.6em
 }
+
+.RightRail__container___uCCNIYSO .aarpe-ad {
+    position: relative;
+}
+
+.RightRail__container___uCCNIYSO .aarpe-ad::before {
+    content: 'ADVERTISEMENT';
+    display: block;
+    position: absolute;
+    top: -1.6em;
+    left: calc(50% - 41px);
+    overflow: hidden;
+    font-size: .625em;
+    line-height: inherit;
+    color: #676767;
+    font-family: Lato,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}

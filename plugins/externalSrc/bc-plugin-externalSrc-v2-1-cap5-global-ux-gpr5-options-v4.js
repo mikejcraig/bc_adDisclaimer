@@ -48,7 +48,7 @@ videojs.registerPlugin('externalSrc', function(options) {
 	    var gameTarget = true;
 	  var cookieValue = window.document.cookie.split('; ').find(row => row.startsWith('bcplaycap'));
     if(gameTarget && !gamesStageSiteEnabled){
-    	  if(!!cookieValue && bcplaycapAdPlayed == 'true'|| v4app == null)) {
+    	  if(!!cookieValue && bcplaycapAdPlayed == 'true'|| v4app == null) {
 	    console.log('NavigationType ' + pageRefresh);
             window.document.getElementsByClassName('vjs-big-play-button')[0].remove();
             setTimeout(function(){

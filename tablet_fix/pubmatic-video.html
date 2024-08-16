@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>NON SRA</title>
+    <!-- videojs -->
+    <!-- use recent version of videojs to ensure proper functioning with the iOS devices -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.4.0/video-js.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/video.js/6.4.0/video.js"></script>
+    <!-- videojs-vast-vpaid -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/videojs-vast-vpaid/2.0.2/videojs.vast.vpaid.min.css"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vast-vpaid/2.0.2/videojs_5.vast.vpaid.min.js"></script>
+
+    <!-- Loading Asynchronously -->
+    <script type="text/javascript">
+        Array.$constructor = function () {
+            for (i = 0; i < this.length; i++) {
+                this[i] = this[i].toUpperCase();
+            }
+        };
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var purl = window.location.href;
+            var url = '//ads.pubmatic.com/AdServer/js/pwt/5890/2130'; // Update PUB_ID & PROF_ID
+            var profileVersionId = '';
+            if (purl.indexOf('pwtv=') > 0) {
+                var regexp = /pwtv=(.*?)(&|$)/g;
+                var matches = regexp.exec(purl);
+                if (matches.length >= 2 && matches[1].length > 0) {
+                    profileVersionId = '/' + matches[1];
+                }
+            }
+            var wtads = document.createElement('script');
+            wtads.async = true;
+            wtads.type = 'text/javascript';
+            wtads.src = url + profileVersionId + '/pwt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(wtads, node);
+        })();
+    </script>
+
+    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        var PWT = {}; //Initialize Namespace
+        PWT.jsLoaded = function () { //PubMatic pwt.js on load callback is used to load GPT
+            var gads = document.createElement('script');
+            gads.type = "text/javascript";
+            gads.async = true;
+            gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        };
+    </script>
+
+    <script type="text/javascript">
+        googletag.cmd.push(function () {
+
+            var s2 = googletag.defineSlot('/43743431/QAVideo', [
+                [640, 480]
+            ], 'Div1').addService(googletag.pubads());
+            s2.setTargeting('a', [1]);
+            s2.setTargeting('b', [2]);
+            s2.setTargeting('c', 3);
+            s2.setTargeting('d', ['a', 'b', 'c']);
+            // var s2 = googletag.defineSlot('/43743431/DMDemo1', [
+            //  [728, 90]
+            // ], 'Div2').addService(googletag.pubads());
+            // s2.setTargeting('aa', [11]);
+            // s2.setTargeting('bb', [22]);
+            // s2.setTargeting('dd', ['aa', 'bb', 'cc']);
+
+
+
+            // common targetings
+            googletag.pubads().setTargeting('v', 'classifieds');
+            googletag.pubads().setTargeting('cpage', 'browseads');
+            googletag.pubads().setTargeting('article-id', '65207');
+            googletag.pubads().setTargeting('automation', '1');
+            googletag.enableServices();
+            if ("undefined" != typeof (PWT) && typeof (PWT.addKeyValuePairsToGPTSlots) == "function") {
+                PWT.requestBids(
+                    PWT.generateConfForGPT(googletag.pubads().getSlots()),
+                    function (adUnitsArray) {
+                        console.log("AdUnitsArray", adUnitsArray);
+                        // PWT.addKeyValuePairsToGPTSlots(adUnitsArray);
+                        // googletag.display('Div1');
+                        // googletag.display('Div2');
+
+                        var videoUrl = window.PWT.generateDFPURL(adUnitsArray[0], {
+                            section: 'blog',
+                            anotherKey: 'anotherValue'
+                        });
+                        invokeVideoPlayer(videoUrl);
+
+                    }
+                );
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <h2>OpenWrap - Prebid Video -- video.js</h2>
+
+    <div class="example-video-container" id='Div1'>
+
+        <video id="vid1" class="video-js vjs-default-skin vjs-big-play-centered" controls data-setup='{}' width='640'
+            height='480'>
+            <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+            <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+            <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg' />
+        </video>
+    </div>
+
+
+    <script>
+        var page_load_time;
+        page_load_time = new Date().getTime() - performance.timing.navigationStart;
+        console.log(page_load_time + "ms -- Player loading!");
+        var vid1 = videojs('vid1');
+        page_load_time = new Date().getTime() - performance.timing.navigationStart;
+        console.log(page_load_time + "ms -- Player loaded!");
+        function invokeVideoPlayer(url) {
+
+            page_load_time = new Date().getTime() - performance.timing.navigationStart;
+            console.log(page_load_time + "ms -- Prebid VAST url = " + url);
+            /* Access the player instance by calling `videojs()` and passing
+               in the player's ID. Add a `ready` listener to make sure the
+               player is ready before interacting with it. */
+
+            videojs("vid1").ready(function () {
+
+                page_load_time = new Date().getTime() - performance.timing.navigationStart;
+                console.log(page_load_time + "ms -- Player is ready!");
+                /* PASS SETTINGS TO VAST PLUGIN
+
+                   Pass in a JSON object to the player's `vastClient` (defined
+                   by the VAST/VPAID plugin we're using). The requires an
+                   `adTagUrl`, which will be the URL returned by Prebid. You
+                   can view all the options available for the `vastClient`
+                   here:
+
+                   https://github.com/MailOnline/videojs-vast-vpaid#options */
+
+                var player = this;
+                var vastAd = player.vastClient({
+                    adTagUrl: url,
+                    playAdAlways: true,
+                    verbosity: 4,
+                    adCancelTimeout: 10000,
+                    vpaidFlashLoaderPath: "https://github.com/MailOnline/videojs-vast-vpaid/blob/RELEASE/bin/VPAIDFlash.swf?raw=true",
+                    autoplay: true
+                });
+                page_load_time = new Date().getTime() - performance.timing.navigationStart;
+                console.log(page_load_time + "ms -- Prebid VAST tag inserted!");
+                player.muted(true);
+                player.play();
+                page_load_time = new Date().getTime() - performance.timing.navigationStart;
+                console.log(page_load_time + "ms -- invokeVideoPlayer complete!");
+            });
+        }
+    </script>
+</body>
+
+</html>

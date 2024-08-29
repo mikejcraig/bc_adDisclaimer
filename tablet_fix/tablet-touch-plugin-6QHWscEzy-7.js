@@ -10,7 +10,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     var playerId = _this.id();
 
 
-    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : true;
+    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
 var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 var tOutTime = (isFirefox) ? 600 : 600;
 
@@ -24,8 +24,7 @@ var tOutTime = (isFirefox) ? 600 : 600;
     var preservisionSponsorshipTest = (preservisionSponsorship && preservisionSponsorship.content) ? preservisionSponsorship.content : false;
 
     console.log('bidvastTag ' + bidvastTag);
-    if (!adplayed && bidVasttagLength && (preservisionSponsorshipTest !== 'gamename=aarp-trivia' && preservisionSponsorshipTest !==  'gamename=preservision-klondike-solitaire'
-    && preservisionSponsorshipTest !== 'gamename=quaker-oats-klondike-solitaire')) {
+    if (!adplayed && bidVasttagLength) {
     _this.ima3.settings.serverUrl = bidvastTag;
     console.log('pwt video ready');
     }
@@ -46,7 +45,7 @@ var tOutTime = (isFirefox) ? 600 : 600;
     });
 
     _this.on('ima3-complete', function () {
-      $aarpe('.vjs-big-play-button').css('display','none');
+      // $aarpe('.vjs-big-play-button').css('display','none');
     });
   });
 });

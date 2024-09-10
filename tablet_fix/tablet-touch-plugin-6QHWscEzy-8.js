@@ -10,7 +10,7 @@ videojs.registerPlugin('tabletTouchSkipButton', function () {
     var playerId = _this.id();
 
 
-    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? false : false;
+    var gamesStageSite = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
 var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 var tOutTime = (isFirefox) ? 600 : 600;
 
@@ -18,7 +18,7 @@ var tOutTime = (isFirefox) ? 600 : 600;
     if (gamesStageSite) {
     var pwtBid = (typeof PWT === 'object' && typeof PWT.requestBids === 'function' && Object.keys(PWT.bidMap).length > 0);
     var bidvastTag = (pwtBid) ? AARP.ads.refreshAdsBySlot('vjs_video_3_html5_api') : false;
-    var bidVasttagLength = (bidvastTag && bidvastTag.split('cust_params=').length == 2) ? bidvastTag.split('cust_params=')[1].length > 0 : false;
+    var bidVasttagLength = (bidvastTag && bidvastTag.split('cust_params=').length == 2 && bidvastTag.match('pwt')) ? bidvastTag.split('cust_params=')[1].length > 0 : false;
     var adplayed = sessionStorage.getItem('bcplaycapAdPlayed');
     var preservisionSponsorship = document.querySelector('#aarpAdUnitCustom');
     var preservisionSponsorshipTest = (preservisionSponsorship && preservisionSponsorship.content) ? preservisionSponsorship.content : false;

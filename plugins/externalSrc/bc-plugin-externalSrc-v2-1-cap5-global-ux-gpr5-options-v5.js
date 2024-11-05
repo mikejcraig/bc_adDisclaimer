@@ -4,8 +4,8 @@ videojs.registerPlugin('externalSrc', function(options) {
   var gamesStageSiteEnabled = (window.location.host == 'arenax-testing2-games.aarp.org') ? true : false;
   var gamesStageSiteEnabled2 = (window.location.host == 'arenax-testing-games.aarp.org') ? true : false;
   var isMobileViewport =  document.documentElement.clientWidth < 768;
-  // var userAgent = typeof navigator;
-  var userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148';
+  var userAgent = typeof navigator;
+  // var userAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148';
   var isSafari = (userAgent != 'undefined') && navigator.userAgent.match("Safari");
   var isAndroid  = (userAgent != 'undefined') && navigator.userAgent.match("Chrome");
   var v4app = isMobileViewport && (isSafari || isAndroid);
